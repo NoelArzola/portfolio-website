@@ -1,0 +1,220 @@
+/****** Body *****/
+
+body {
+    background: #1f202b;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0px auto;
+}
+
+h2 {
+    color: #fa0075;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 36px;
+    margin: 0 auto;
+    text-align: center; 
+}
+
+h3 {
+    font-weight: bold;
+    /*margin: 0 auto;*/
+}
+
+/*h4 {
+    margin: 0 auto;
+}
+
+p {
+    margin: 0 auto;
+}*/
+
+span {
+    color: #fa0075;
+}
+
+/***** Grid *****/
+
+.container {
+    margin: 0 auto;
+    width: 1400px;
+}
+
+.full-width {
+    width: 1400px;
+}
+
+.half-width {
+    float: left;
+    width: 660px;
+}
+
+.third-width {
+    float: left;
+    width: 466px;
+}
+
+/***** Header *****/
+
+header h1 {
+    float: left;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+header nav {
+    float: right;
+}
+
+nav ul li {
+    display: inline-block; 
+}
+
+nav ul li a {
+    color: #ffffff;
+    padding: 10px 22.5px 10px 22.5px;
+    text-decoration: none;
+}
+
+/***** Main *****/
+
+#main-section {
+    background: url('../img/hero-background.png') no-repeat;
+    clear: both;
+}
+
+#main-section p {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 72px;
+    font-weight: 600;
+    margin-bottom: 55px;
+    margin-top: 0px;
+    padding: 270px 0 270px 95px; 
+}
+
+#main-image img {
+    width: 1400px;
+}
+
+/***** Portfolio *****/
+
+.portfolio h2 {
+    padding-bottom: 110px;
+}
+
+.portfolio h3,
+.portfolio h4 {
+    margin: 0px;
+}
+
+.portfolio-image {
+    height: 350px;
+    padding-bottom: 110px;
+    padding-top: 10px;
+    width: 550px;
+}
+
+.portfolio h3 {
+    padding-bottom: 5px;
+}
+
+.portfolio h4 {
+    font-weight: normal;
+}
+
+#portfolio-left {
+    margin: 0 auto;
+    text-align: right;
+    padding-right: 35px;
+}
+
+#portfolio-right {
+    margin: 0 auto;
+    padding-left: 35px;
+    text-align: left;
+}
+
+.portfolio p {
+    width: 550px;
+}
+
+#top-paragraph {
+    padding-bottom: 150px;
+}
+
+#middle-paragraph {
+    margin-right: 0px;
+    padding-bottom: 150px;
+    padding-left: 110px;
+    padding-right: 0px;
+}
+
+#portfolio-right a {
+    display: inline;
+    text-decoration: none;
+    vertical-align: bottom;
+}
+
+/***** About *****/
+
+.about-section {
+    background: url('../img/about-me.png') no-repeat;
+    clear: both;
+    color: black;
+    padding: 10px 0 450px 0;
+    width: 1400px;
+}
+
+.about-section img {
+    width: 1200px;
+}
+
+.about-section .half-width {
+    padding-left: 100px;
+    text-align: left;
+}
+
+#about {
+    padding-top: 40px;
+}
+
+/***** Footer *****/
+
+footer {
+    clear: both;
+}
+
+footer .third-width {
+    float: left;
+    text-align: center;
+}
+
+footer h2 {
+    padding: 50px 20px 60px 20px;
+}
+
+footer h3 {
+    padding: 30px;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer p {
+    line-height: 35px;
+    margin: 0 auto;
+}
+
+footer img {
+    padding: 20px;
+}
+
+#copyright {
+    clear: both;
+    font-size: 18px;
+    padding: 50px 0 10px 0;
+    text-align: center;
+}
