@@ -273,8 +273,8 @@ footer img {
     }
 
     .container {   
-        /*width: 96.953%;*/
-        width: 75%;
+        width: 100%;
+        
     }
 
     .half-width {
@@ -287,6 +287,7 @@ footer img {
     
     h2 {
         font-size: 1.5em;
+        padding: 1.6666666em 0;
     }
 
     /***** Header *****/
@@ -300,6 +301,7 @@ footer img {
     header h1 {
         display: block;
         font-size: 1.25em;
+        padding-left: 1.4em;
     }
 
     .header-divider {
@@ -309,7 +311,7 @@ footer img {
     header nav {
         display: block;
         font-size: 1em; 
-        padding-right: .5em;   
+        padding-right: .416666666em;   
     }
 
     nav ul li {
@@ -338,11 +340,12 @@ footer img {
         justify-content: space-around;
         align-items: stretch;
         flex-flow: row wrap;
-        padding: 0 3.17em;
+        /*margin: 0 0 0 .919920833em;*/
+        padding: 0 3.16666666em;
     }
 
     .portfolio {
-        width: 95%;
+        width: 89.5%;
     }
 
     .showcase div,
@@ -364,22 +367,6 @@ footer img {
         display: block;
     }
 
-    /*.portfolio-left,
-    .portfolio-right {
-        width: 40%;
-        align-content: space-between;
-    }
-
-    .portfolio-left {
-        text-align: right;
-        padding-left: 4.17em;
-    }
-
-    .portfolio-right {
-        text-align: left;
-        padding-right: 4.17em;
-    }*/
-
     .showcase .portfolio-image {
         height: unset;
         padding: 0;
@@ -394,12 +381,17 @@ footer img {
     .about-section {
         margin: 0 auto;
         min-height: 700px;
-        width: 75%;
+        width: 100%;
+    }
+
+    #about {
+        padding-top: 1.6666666em;
     }
 
     .about-section h3 {
-    padding: 0 0 0 3.562em;
-    width: 50%;
+        margin-top: 0;
+        padding: 0 0 0 3.562em;
+        width: 50%;
     }
 
     .about-section p {
@@ -407,10 +399,18 @@ footer img {
         width: 43.5%;
     }
 
+    .about-section .third-paragraph {
+        padding-bottom: 4.16666666em;
+    }
+
     /***** Footer *****/
 
+    footer h2 {
+        padding: 1.6666666em 0 1.090833333em 0;
+    }
+
     footer img {
-        width: 8%;
+        width: 10.525%;
         padding: .75em;
     }
 
