@@ -1,99 +1,176 @@
 <!doctype html>
-<html lang="en-US">
-    <head>
-        <meta charset="utf-8" >
-        <title>Noel Arzola</title>
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,600&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div class="container">
-            <header>
+<html class="no-js" lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <title>Noel Arzola | Web Developer</title>
+  <meta name="description" content="Portfolio Website, Web Developer, Front-End Developer, Programmer">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,600&display=swap" rel="stylesheet">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="full-width">
+                <h1>&lt;noel arzola | web developer /&gt;</h1>
+            <div class="header-divider"></div>
+                <nav>
+                    <ul>
+                        <li><a href="#portfolio-section">portfolio</a></li>
+                        <li><a href="#about">about</a></li>
+                        <li><a href="#contact">contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <main>
+            <div class="full-width" id="main-section">
+                <p>let's <span>code</span>
+                <br> something cool</p>
+            </div>
+
+            <section>
                 <div class="full-width">
-                    <h1>&lt;noel arzola | web developer /&gt;</h1>
-                    <nav>
-                        <ul>
-                            <li><a href="#portfolio-section">portfolio</a></li>
-                            <li><a href="#about">about</a></li>
-                            <li><a href="#contact">contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </header>
-            
-            <main>
-                <div class="full-width" id="main-section">
-                    <p>let's <span>code</span><br>
-                        something cool</p>
+                <h2 id="portfolio-section">my portfolio</h2>  
                 </div>
 
-                <section>
-                    <div class="full-width portfolio">
-                      <h2 id="portfolio-section">my portfolio</h2>  
+                <div class="portfolio"> <!--Begin alternating text and images in the portfolio-->
+                    <a href="https://www.noelarzola.com/unplugged-retreat" target="_blank"><img class="portfolio-image" src="img/unplugged-retreat.png" alt="Snapshot of the Unplugged website"></a>
+                    
+                    <div>
+                        <h3>Unplugged Retreat Website</h3>
+                        <h4>Mobile first HTML 5 &amp; CSS from Photoshop Design Comps</h4>
+                        <p>This was created from the ground up from a set of three design comps for mobile, tablet, and desktop. It is a completely responsive multi-page website made using Flexbox with perfectly scaling images and text. Using Photoshop I pulled measurements, font-sizes, and line-heights to create an exact replica for all three experiences. This and my personal site are my favorite pieces of work.</p>
                     </div>
-                    <div class="half-width portfolio" id="portfolio-left">
-                        <a href="https://www.noelarzola.com/rogue-pickings" target="_blank"><img src="img/rogue-pickings.png" alt="Snapshot of the Rogue Pickings website" class="portfolio-image"></a>
-                        <h3>Jubilee Austen Project</h3>
-                        <h4>HTML 5 &amp; CSS Website</h4>
-                        <p id="middle-paragraph">This is a Skillcrush project of a personal website for a fictional developer also made from a PDC with the HTML and CSS coded from the ground up. It is a single page design that  contains a big, bold, beautiful header with work and contact sections that also stand out.</p>
-                        <a href="https://www.noelarzola.com/holstee-manifesto" target="_blank"><img src="img/holstee.png" alt="Snapshot of my Holstee Manifesto exercise" class="portfolio-image"></a>
-                    </div>
-                </section>
 
-                <section>
-                    <div class="half-width portfolio" id="portfolio-right">
+                    <div class="left-side-text">
                         <h3>Rogue Pickings Website</h3>
-                        <h4>HTML and CSS from Photoshop Design Comp</h4>
-                        <p id="top-paragraph">This is a multi-page site made from scratch for a fictional food truck company. Using the Photoshop Design Comp I pulled the images, dimensions, and font styles. Using all of that data I created a base in HTML and then created the site and designed it to match the design in CSS.</p>
-                        <a href="https://www.noelarzola.com/jubilee-austen" target="_blank"><img src="img/jubilee.png" alt="Snapshot of the Jubilee Austen website" class="portfolio-image"></a>
+                        <h4>HTML 5 &amp; CSS from Photoshop Design Comp</h4>
+                        <p>This is a multi-page site made from scratch for a fictional food truck company. Using the Photoshop Design Comp I pulled the images, dimensions, and font styles. Using all of that data I created a base in HTML and then created the site and designed it to match the design in CSS.</p>
+                    </div>
+                    
+                    <a href="https://www.noelarzola.com/rogue-pickings" target="_blank"><img src="img/rogue-pickings.png" alt="Snapshot of the Rogue Pickings website" class="portfolio-image"></a>
+                    
+                    <a href="https://www.noelarzola.com/rogue-pickings-responsive" target="_blank"><img src="img/rogue-responsive.jpg" alt="Snapshot of the Rogue Pickings Responsive website" class="portfolio-image"></a>
+                    
+                    <div>
+                        <h3>Rogue Pickings Website, Mobile First Remix</h3>
+                        <h4>HTML 5 &amp; CSS from Photoshop Design Comp</h4>
+                        <p>This is a project site that was converted from static to responsive. It was good practice taking an already established project and scaling it down for smaller screens and a better user experience. The amount of work that went into this really emphasized why mobile first development is so important and time-saving!</p>
+                    </div>
+                    
+                    <div class="left-side-text">
+                        <h3>Jubilee Austen Project</h3>
+                        <h4>HTML5 &amp; CSS Website</h4>
+                        <p>This is a Skillcrush project of a personal website   for a fictional developer also made from a PDC with the HTML and CSS coded from the ground up. It is a single page design that  contains a big, bold, beautiful header with work and contact sections that also stand out.</p>
+                    </div>
+                    
+                    <a href="https://www.noelarzola.com/jubilee-austen" target="_blank"><img src="img/jubilee.png" alt="Snapshot of the Jubilee Austen website" class="portfolio-image"></a>
+                    
+                    <a href="https://www.noelarzola.com/us-election-map" target="_blank"><img class="portfolio-image" src="img/election-map.png" alt="Snapshot of the Interactive Election Map"></a>
+                    
+                    <div>
+                        <h3>Interactive U.S. Election Map</h3>
+                        <h4>HTML, CSS, &amp; JavaScript</h4>
+                        <p>This is an interactive site fueled by JavaScript. At the top of the page it reflects the total votes and declares a winner. As you mouse over the states they will change from gray to the party color of the winner or blue if there is a draw. The table in the bottom corner will display the date, the candidates names, their total votes, and the winner of the state all following the same color scheme. I’ve always loved JavaScript and it was cool working with my first JavaScript framework.</p>
+                    </div>
+                    
+                    <div class="left-side-text">
+                        <h3>Magic 8 Ball</h3>
+                        <h4>HTML, CSS, &amp; JavaScript</h4>
+                        <p>The Magic 8 Ball you’ll find here puts my first 8 Ball to shame! The code is where the real beauty is at, it is so much more efficient, clean, and powerful. This interactive site displays an 8 Ball with an interactive button below it. Once you hit the button the ball will shake and you’ll be prompted to enter a question (choose wisely!). After one more shake the answer is revealed! You can find my first 8 Ball <span><a href="https://www.khanacademy.org/computer-programming/spin-off-of-project-magic-8-ball/5424639632965632">here</a></span> and my old coding and programming projects <span><a href="https://www.khanacademy.org/profile/kaid_1090753923038244403640020/projects">here</a></span>.</p>
+                    </div>
+                    
+                    <a href="https://www.noelarzola.com/magic-8-ball" target="_blank"><img class="portfolio-image" src="img/magic-8-ball.png" alt="Snapshot of the Magic 8 Ball site"></a>
+                    
+                    <a href="https://www.noelarzola.com/lolcat-clock" target="_blank"><img class="portfolio-image" src="img/lolcat-clock.jpg" alt="Snapshot of the LOL Cat Clock"></a>
+                    
+                    <div>
+                        <h3>LOLCat Clock</h3>
+                        <h4>HTML, CSS, &amp; JavaScript</h4>
+                        <p>An interactive clock full of entertaining cat pics. There are four buttons that accept user input. Three are for setting a custom wake-up, lunch, and nap times which will trigger images related to each when the time matches. The fourth is a “PARTY TIME!” button that can be activated at any time, check out what happens when you tap it.</p>
+                    </div>
+
+                    <div class="left-side-text">
+                        <h3>Bruce Lee Manifesto</h3>
+                        <h4>HTML & CSS Exercise</h4>
+                        <p>While working on the Holstee Manifesto project I kept dreaming up this site in the back of my head. I don’t know if it’s because Bruce Lee and Holstee sound similar, or if it was the arrangement of inspirational quotes (probably both!). This was a crash course on cross-browser compatibility and required a lot of tweaking to get it just right on all major browsers. It was fun and rewarding. RIP the greatest of all time!</a></p>
+                    </div>
+                    
+                    <a href="https://www.noelarzola.com/brucelee-manifesto" target="_blank"><img class="portfolio-image" src="img/brucelee-manifesto.jpg" alt="Snapshot of the Bruce Lee Manifesto website"></a>
+                    
+                    <a href="https://www.noelarzola.com/holstee-manifesto" target="_blank"><img class="portfolio-image" src="img/holstee.jpg" alt="Snapshot of my Holstee Manifesto exercise"></a>
+                    
+                    <div>
                         <h3>Holstee Manifesto Exercise</h3>
                         <h4>HTML & CSS Exercise</h4>
-                        <p>This was a fun project that involved Rubik’s cubing quotes from the Holstee Manifesto, divs, and padding into a work of art. It was a great exercise to practice CSS and I enjoyed it so much I actually made a Bruce Lee “Manifesto” which can be found <a href="https://www.noelarzola.com/bruce-lee-manifesto" target="_blank"><span>here.</span></a></p>
+                        <p>This was a fun project that involved Rubik’s cubing quotes from the Holstee Manifesto, divs, and padding into a work of art. It was the first project in my Skillcrush Break Into Tech course. It was a great exercise to practice CSS, measurements, padding, margin, and floats.</p>
                     </div>
-                </section>
+                </div> <!--End Portfolio section-->
+            </section>
 
-                <section>
-                    <div class="about-section">
-                        <div>
-                            <h2 id="about">about me</h2>
-                            <div>
-                                <div class="half-width">
-                                    <h3>I am passionate about the web.</h3>
-                                    <p>I’m Noel Arzola, a Front-End Developer based in Ohio that codes with HTML, CSS, and JavaScript. I take pride in writing clean, efficient code and enjoy making great looking websites.</p>
-                                    <p>I'm a proud Skillcrush, Khan Academy, and Grasshopper Alum. When I’m not coding or learning and reading more about developing I enjoy spending time with my three kids, lifting weights, and learning foreign languages!</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </main>
-            
-            <footer>
-                <div class="full-width">
-                    <h2 id="contact">let's connect</h2>
+            <section>
+                <div class="about-section">
+                    <h2 id="about">about me</h2>
+                    <h3>I am passionate about the web.</h3>
+                    <p>I’m Noel Arzola, a Front-End Developer based in Ohio that codes with HTML, CSS, and JavaScript. I take pride in writing clean, efficient code and enjoy making great looking websites.</p>
+                    <p>I'm a proud Skillcrush, Khan Academy, and Grasshopper Alum. When I’m not coding or learning and reading more about developing I love spending time with my three kids, rididng my motorcycle, lifting weights, and learning foreign languages!</p>
+                    <p class="third-paragraph">Can't wait to work with you!</p>
                 </div>
-                <div class="third-width">
-                    <h3>Hire me</h3>
-                    <p>740-315-8315<br>
-                    <a href="mailto:noel@noelarzola.com">noel@noelarzola.com</a></p>
-                </div>
-                <div class="third-width">
-                    <h3>Follow me</h3>
-                    <a href="https://www.twitter.com/arzolacodes" target="_blank"><img src="img/twitter.png" alt="Round pink Twitter logo"></a>
-                    <a href="https://www.github.com/noelarzola" target="_blank"><img src="img/github.png" alt="Round pink Github logo"></a>
-                    <a href="https://www.linkedin.com/in/noelarzola" target="_blank"><img src="img/linkedin.png" alt="Round pink LinkedIn logo" ></a>
-                </div>
-                <div class="third-width">
-                    <h3>Meet me</h3>
-                    <p>Belpre, Ohio</p>
-                    <p>Let's go to meetups together!</p>
-                </div>
-                <div id="copyright">
-                    <p>Copyright 2020 | Arzola Solutions, LLC</p>
-                </div>
-            </footer>
-        </div>
-    </body>
+            </section>
+        </main>
+        
+        <footer>
+            <div class="full-width">
+                <h2 id="contact">let's connect</h2>
+            </div>
+            <div class="third-width">
+                <h3>Hire me</h3>
+                <p>740-315-8315<br>
+                <a href="mailto:noel@noelarzola.com"><span>noel@noelarzola.com</span></a></p>
+            </div>
+            <div class="third-width">
+                <h3>Follow me</h3>
+                <a href="https://www.twitter.com/arzolacodes" target="_blank"><img src="img/twitter.png" alt="Round pink Twitter logo"></a>
+                <a href="https://noelarzola.github.io/" target="_blank"><img src="img/github.png" alt="Round pink Github logo"></a>
+                <a href="https://www.linkedin.com/in/noelarzola" target="_blank"><img src="img/linkedin.png" alt="Round pink LinkedIn logo" ></a>
+            </div>
+            <div class="third-width">
+                <h3>Meet me</h3>
+                <p>Belpre, Ohio</p>
+                <p>Let's go to meetups together!</p>
+            </div>
+            <div id="copyright">
+                <p>Copyright 2020 | Arzola Solutions, LLC</p>
+            </div>
+        </footer>
+    </div> <!--End Container-->
+
+  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
 </html>
