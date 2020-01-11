@@ -1,4 +1,4 @@
-/****** Base Styles *****/
+/****** Base Styles ******/
 
 body {
     background: #1f202b;
@@ -30,7 +30,7 @@ a {
     text-decoration: none;
 }
 
-/***** Grid Stuff*****/
+/****** Grid Stuff ******/
 
 .container {
     margin: 0 auto;
@@ -50,7 +50,7 @@ a {
     padding: 0;
 }
 
-/***** Header *****/
+/****** Header ******/
 
 header h1 {
     display: flex;
@@ -84,16 +84,16 @@ nav ul li a {
     text-decoration: none;
 }
 
-/***** Hero Area *****/
+/****** Hero Area ******/
 
 #main-section {
+    align-content: center;
     background: url(../img/hero-background.png) center no-repeat #333;
     background-size: cover;
     display: flex;
     flex-flow: row wrap;
     height: 100%;
     justify-content: space-around;
-    align-content: center;
     min-height: 500px;
     width: 100%;
 }
@@ -106,13 +106,13 @@ nav ul li a {
     margin-top: 0; 
 }
 
-/***** Showcase *****/
+/****** Showcase ******/
 
 .showcase {
-    display: flex;
-    justify-content: center;
     align-items: center;
+    display: flex;
     flex-flow: column wrap;
+    justify-content: center;
 }
 
 .showcase a:visited { 
@@ -148,7 +148,7 @@ nav ul li a {
     font-weight: normal;
 }
 
-/***** About *****/
+/****** About ******/
 
 #about {
     padding-top: 1.11em;
@@ -168,13 +168,13 @@ nav ul li a {
     padding: 0 1em;
 }
 
-/***** Footer *****/
+/****** Footer ******/
 
 footer {
-    display: flex;
-    justify-content: center;
     align-content: center;
+    display: flex;
     flex-flow: column wrap;
+    justify-content: center;
 }
 
 footer .third-width {
@@ -200,8 +200,8 @@ footer p {
 }
 
 footer img {
-    width: 10%;
     padding: 1.25em;
+    width: 10%;
 }
 
 #copyright {
@@ -210,16 +210,16 @@ footer img {
     text-align: center;
 }
 
-/*****Tablet Styles*****/
+/****** Tablet Styles ******/
 
 @media only screen and (min-width: 768px) {
 
-    /*** Base ***/
+    /****** Base ******/
     .third-width {
         width: 33.33%;
     }
 
-    /*** Showcase ***/
+    /****** Showcase ******/
     .showcase {
         flex-flow: row wrap;
         justify-content: center;
@@ -232,24 +232,15 @@ footer img {
     
     .showcase div,
     .showcase a {
-        /*background: red;*/
         flex: 0 0 40%;
         padding: 2em 1em;
     }
     
-    /*Tablet ONLY!*/
-    .showcase .portfolio-image {
+    .showcase .portfolio-image { /*Tablet ONLY!*/
         height: 12.80em;
     }
-    /*
-
-
-
-    .portfolio-right .portfolio-image {
-        padding-right: 0;
-    }
     
-    /*** About ***/
+    /****** About ******/
 
     .about-section h3,
     .about-section p {
@@ -257,16 +248,16 @@ footer img {
         width: 70%;
     }
 
-    /*** Footer ***/
+    /****** Footer ******/
     footer {
         flex-flow: row wrap;
     }
 }
 
-/***** Desktop Styles *****/
+/****** Desktop Styles ******/
 @media only screen and (min-width: 1200px) {
     
-    /***** Base Styles *****/
+    /****** Base Styles ******/
 
     body {
         font-size: 1.5em;
@@ -290,12 +281,13 @@ footer img {
         padding: 1.6666666em 0;
     }
 
-    /***** Header *****/
+    /****** Header ******/
 
     header .full-width {
         display: flex;
-        justify-content: space-between;
         flex-flow: row wrap;
+        justify-content: space-between;
+        
     }
 
     header h1 {
@@ -319,10 +311,9 @@ footer img {
         padding: 0 1em;
     }
 
-    /***** Hero Area *****/
+    /****** Hero Area ******/
 
     #main-section {
-        
         justify-content: flex-start;
         margin: 0 auto;
         min-height: 727px;
@@ -332,15 +323,14 @@ footer img {
     #main-section p {
         font-size: 3em;
         padding: 1.25em 0 0 1.5em;
-        }
+    }
 
-    /****** Showcase *****/
+    /****** Showcase ******/
 
     .showcase {
-        justify-content: space-around;
         align-items: stretch;
         flex-flow: row wrap;
-        /*margin: 0 0 0 .919920833em;*/
+        justify-content: space-around;
         padding: 0 3.16666666em;
     }
 
@@ -348,23 +338,18 @@ footer img {
         width: 89.5%;
     }
 
-    .showcase div,
-    .showcase a {
-        /*background: red;*/
-        flex: 1 0 32%;
-        padding: 2em 1em;
-        justify-content: center;
-    }
-
-    .left-side-text span a {
-        padding: 0;
-    }
-
     .portfolio div,
     .portfolio h3,
     .portfolio h4,
     .portfolio p {
         display: block;
+    }
+
+    .showcase div,
+    .showcase a {
+        flex: 1 0 32%;
+        padding: 2em 1em;
+        justify-content: center;
     }
 
     .showcase .portfolio-image {
@@ -376,7 +361,11 @@ footer img {
         text-align: right;
     }
 
-    /***** About *****/
+    .left-side-text span a {
+        padding: 0;
+    }
+
+    /****** About ******/
 
     .about-section {
         margin: 0 auto;
@@ -403,15 +392,15 @@ footer img {
         padding-bottom: 4.16666666em;
     }
 
-    /***** Footer *****/
+    /****** Footer ******/
 
     footer h2 {
         padding: 1.6666666em 0 1.090833333em 0;
     }
 
     footer img {
-        width: 10.525%;
         padding: .75em;
+        width: 10.525%;
     }
 
     #copyright  {
