@@ -106,16 +106,16 @@ nav ul li a {
     margin-top: 0; 
 }
 
-/****** Showcase ******/
+/****** Portfolio ******/
 
-.showcase {
+.portfolio {
     align-items: center;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
 }
 
-.showcase a:visited { 
+.portfolio a:visited { 
     color: #fa0075;
 }
 
@@ -166,6 +166,10 @@ nav ul li a {
 .about-section h3,
 .about-section p {
     padding: 0 1em;
+}
+
+.about-section .third-paragraph {
+    padding-bottom: 8em;
 }
 
 /****** Footer ******/
@@ -219,8 +223,8 @@ footer img {
         width: 33.33%;
     }
 
-    /****** Showcase ******/
-    .showcase {
+    /****** Portfolio ******/
+    .portfolio {
         flex-flow: row wrap;
         justify-content: center;
         align-items: stretch;
@@ -230,13 +234,13 @@ footer img {
         width: 100%;
     }
     
-    .showcase div,
-    .showcase a {
+    .portfolio div,
+    .portfolio a {
         flex: 0 0 40%;
         padding: 2em 1em;
     }
     
-    .showcase .portfolio-image { /*Tablet ONLY!*/
+    .portfolio .portfolio-image { /*TABLET ONLY!*/
         height: 12.80em;
     }
     
@@ -325,9 +329,9 @@ footer img {
         padding: 1.25em 0 0 1.5em;
     }
 
-    /****** Showcase ******/
+    /****** Portfolio ******/
 
-    .showcase {
+    .portfolio {
         align-items: stretch;
         flex-flow: row wrap;
         justify-content: space-around;
@@ -345,14 +349,14 @@ footer img {
         display: block;
     }
 
-    .showcase div,
-    .showcase a {
+    .portfolio div,
+    .portfolio a {
         flex: 1 0 32%;
         padding: 2em 1em;
         justify-content: center;
     }
 
-    .showcase .portfolio-image {
+    .portfolio .portfolio-image {
         height: unset;
         padding: 0;
     }
