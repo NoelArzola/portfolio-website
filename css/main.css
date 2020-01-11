@@ -1,10 +1,10 @@
-/****** Body *****/
+/****** Base Styles *****/
 
 body {
     background: #1f202b;
     color: #ffffff;
     font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
+    font-size: 1em;
     font-weight: 400;
     margin: 0px auto;
 }
@@ -12,190 +12,181 @@ body {
 h2 {
     color: #fa0075;
     font-family: 'Source Code Pro', monospace;
-    font-size: 36px;
+    font-size: 2.25em;
     margin: 0 auto;
+    padding: 1em 0;
     text-align: center; 
 }
 
 h3 {
     font-weight: bold;
-    /*margin: 0 auto;*/
 }
-
-/*h4 {
-    margin: 0 auto;
-}
-
-p {
-    margin: 0 auto;
-}*/
 
 span {
     color: #fa0075;
 }
 
-/***** Grid *****/
+a { 
+    text-decoration: none;
+}
+
+/***** Grid Stuff*****/
 
 .container {
     margin: 0 auto;
-    width: 1400px;
+    width: 100%;
 }
 
 .full-width {
-    width: 1400px;
+    width: 100%;
 }
 
 .half-width {
-    float: left;
-    width: 660px;
+    width: 50%;
 }
 
 .third-width {
-    float: left;
-    width: 466px;
+    margin: 0;
+    padding: 0;
 }
 
 /***** Header *****/
 
 header h1 {
-    float: left;
-    font-size: 30px;
+    display: flex;
+    font-size: 1.25em;
     font-weight: 400;
+    justify-content: center;
+}
+
+.header-divider {
+    background: #fa0075;
+    height: 1px;
 }
 
 header nav {
-    float: right;
+    display: flex;
+    font-size: 1.25em;
+    justify-content: center;
+}
+
+nav ul {
+    padding: 0;
 }
 
 nav ul li {
-    display: inline-block; 
+    list-style-type: none;
+    padding: 1.5em 0;
 }
 
 nav ul li a {
     color: #ffffff;
-    padding: 10px 22.5px 10px 22.5px;
     text-decoration: none;
 }
 
-/***** Main *****/
+/***** Hero Area *****/
 
 #main-section {
-    background: url('../img/hero-background.png') no-repeat;
-    clear: both;
+    background: url(../img/hero-background.png) center no-repeat #333;
+    background-size: cover;
+    display: flex;
+    flex-flow: row wrap;
+    height: 100%;
+    justify-content: space-around;
+    align-content: center;
+    min-height: 500px;
+    width: 100%;
 }
 
 #main-section p {
     font-family: 'Source Code Pro', monospace;
-    font-size: 72px;
+    font-size: 2.25em;
     font-weight: 600;
     margin-bottom: 55px;
-    margin-top: 0px;
-    padding: 270px 0 270px 95px; 
+    margin-top: 0; 
 }
 
-#main-image img {
-    width: 1400px;
+/***** Showcase *****/
+
+.showcase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
 }
 
-/***** Portfolio *****/
+.showcase a:visited { 
+    color: #fa0075;
+}
 
-.portfolio h2 {
-    padding-bottom: 110px;
+#portfolio-section h2 {
+    padding: 1em 0;
 }
 
 .portfolio h3,
 .portfolio h4 {
-    margin: 0px;
+    margin: 0;
+}
+
+.portfolio div,
+.portfolio h3,
+.portfolio h4,
+.portfolio p {
+    display: none;
 }
 
 .portfolio-image {
-    height: 350px;
-    padding-bottom: 110px;
-    padding-top: 10px;
-    width: 550px;
+    padding: 1em 0 2em 0;
+    width: 100%;
 }
 
 .portfolio h3 {
-    padding-bottom: 5px;
+    padding-bottom: .3125em;
 }
 
 .portfolio h4 {
     font-weight: normal;
 }
 
-#portfolio-left {
-    margin: 0 auto;
-    text-align: right;
-    padding-right: 35px;
-}
-
-#portfolio-right {
-    margin: 0 auto;
-    padding-left: 35px;
-    text-align: left;
-}
-
-.portfolio p {
-    width: 550px;
-}
-
-#top-paragraph {
-    padding-bottom: 150px;
-}
-
-#middle-paragraph {
-    margin-right: 0px;
-    padding-bottom: 150px;
-    padding-left: 110px;
-    padding-right: 0px;
-}
-
-#portfolio-right a {
-    display: inline;
-    text-decoration: none;
-    vertical-align: bottom;
-}
-
 /***** About *****/
 
-.about-section {
-    background: url('../img/about-me.png') no-repeat;
-    clear: both;
-    color: black;
-    padding: 10px 0 450px 0;
-    width: 1400px;
-}
-
-.about-section img {
-    width: 1200px;
-}
-
-.about-section .half-width {
-    padding-left: 100px;
-    text-align: left;
-}
-
 #about {
-    padding-top: 40px;
+    padding-top: 1.11em;
+}
+
+.about-section {
+    background: url(../img/about-me.png) center no-repeat #333;
+    background-size: cover;
+    color: black;
+    height: 100%;
+    min-height: 515px;
+    width: 100%;
+}
+
+.about-section h3,
+.about-section p {
+    padding: 0 1em;
 }
 
 /***** Footer *****/
 
 footer {
-    clear: both;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-flow: column wrap;
 }
 
 footer .third-width {
-    float: left;
     text-align: center;
 }
 
 footer h2 {
-    padding: 50px 20px 60px 20px;
+    padding: 1em 0 1em 0;
 }
 
 footer h3 {
-    padding: 30px;
+    padding: 1.875em;
 }
 
 footer a {
@@ -209,12 +200,221 @@ footer p {
 }
 
 footer img {
-    padding: 20px;
+    width: 10%;
+    padding: 1.25em;
 }
 
 #copyright {
-    clear: both;
-    font-size: 18px;
-    padding: 50px 0 10px 0;
+    font-size: 1.125em;
+    padding: 3.125em 0 .625em 0;
     text-align: center;
+}
+
+/*****Tablet Styles*****/
+
+@media only screen and (min-width: 768px) {
+
+    /*** Base ***/
+    .third-width {
+        width: 33.33%;
+    }
+
+    /*** Showcase ***/
+    .showcase {
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: stretch;
+    }     
+
+    .portfolio {
+        width: 100%;
+    }
+    
+    .showcase div,
+    .showcase a {
+        /*background: red;*/
+        flex: 0 0 40%;
+        padding: 2em 1em;
+    }
+    
+    /*Tablet ONLY!*/
+    .showcase .portfolio-image {
+        height: 12.80em;
+    }
+    /*
+
+
+
+    .portfolio-right .portfolio-image {
+        padding-right: 0;
+    }
+    
+    /*** About ***/
+
+    .about-section h3,
+    .about-section p {
+        padding-left: 2em;
+        width: 70%;
+    }
+
+    /*** Footer ***/
+    footer {
+        flex-flow: row wrap;
+    }
+}
+
+/***** Desktop Styles *****/
+@media only screen and (min-width: 1200px) {
+    
+    /***** Base Styles *****/
+
+    body {
+        font-size: 1.5em;
+    }
+
+    .container {   
+        /*width: 96.953%;*/
+        width: 75%;
+    }
+
+    .half-width {
+        width: 47%;
+    }
+
+    .third-width {
+        width: 33%;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+    }
+
+    /***** Header *****/
+
+    header .full-width {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row wrap;
+    }
+
+    header h1 {
+        display: block;
+        font-size: 1.25em;
+    }
+
+    .header-divider {
+        display: none;
+    }
+
+    header nav {
+        display: block;
+        font-size: 1em; 
+        padding-right: .5em;   
+    }
+
+    nav ul li {
+        display: inline-block;
+        padding: 0 1em;
+    }
+
+    /***** Hero Area *****/
+
+    #main-section {
+        
+        justify-content: flex-start;
+        margin: 0 auto;
+        min-height: 727px;
+        width: 100%;
+    }
+
+    #main-section p {
+        font-size: 3em;
+        padding: 1.25em 0 0 1.5em;
+        }
+
+    /****** Showcase *****/
+
+    .showcase {
+        justify-content: space-around;
+        align-items: stretch;
+        flex-flow: row wrap;
+        padding: 0 3.17em;
+    }
+
+    .portfolio {
+        width: 95%;
+    }
+
+    .showcase div,
+    .showcase a {
+        /*background: red;*/
+        flex: 1 0 32%;
+        padding: 2em 1em;
+        justify-content: center;
+    }
+
+    .left-side-text span a {
+        padding: 0;
+    }
+
+    .portfolio div,
+    .portfolio h3,
+    .portfolio h4,
+    .portfolio p {
+        display: block;
+    }
+
+    /*.portfolio-left,
+    .portfolio-right {
+        width: 40%;
+        align-content: space-between;
+    }
+
+    .portfolio-left {
+        text-align: right;
+        padding-left: 4.17em;
+    }
+
+    .portfolio-right {
+        text-align: left;
+        padding-right: 4.17em;
+    }*/
+
+    .showcase .portfolio-image {
+        height: unset;
+        padding: 0;
+    }
+
+    .left-side-text {
+        text-align: right;
+    }
+
+    /***** About *****/
+
+    .about-section {
+        margin: 0 auto;
+        min-height: 700px;
+        width: 75%;
+    }
+
+    .about-section h3 {
+    padding: 0 0 0 3.562em;
+    width: 50%;
+    }
+
+    .about-section p {
+        padding: 0 0 0 4.17em;
+        width: 43.5%;
+    }
+
+    /***** Footer *****/
+
+    footer img {
+        width: 8%;
+        padding: .75em;
+    }
+
+    #copyright  {
+        font-size: .75em;
+    }
 }
