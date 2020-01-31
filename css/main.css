@@ -210,9 +210,24 @@ footer p {
     margin: 0 auto;
 }
 
-footer img {
+/*footer img {
     padding: 1.25em;
     width: 10%;
+}*/
+
+.fa-stack {
+    padding: 0 .5em;
+}
+
+.fa-linkedin-in,
+.fa-twitter { 
+    color: #1f202b; 
+    font-size: 1em; 
+}
+
+.fa-github {
+    font-size: 2em;
+    vertical-align: bottom;
 }
 
 #copyright {
@@ -263,6 +278,7 @@ footer img {
     footer {
         flex-flow: row wrap;
     }
+
 }
 
 /****** Desktop Styles ******/
@@ -407,11 +423,6 @@ footer img {
 
     footer h2 {
         padding: 1.6666666em 0 1.090833333em 0;
-    }
-
-    footer img {
-        padding: .75em;
-        width: 10.525%;
     }
 
     #copyright  {
