@@ -10,7 +10,8 @@ body {
 }
 
 h2 {
-    color: #fa0075;
+    /*color: #fa0075; Changing for accessibility if I can stand it*/
+    color: #FA00C3
     font-family: 'Source Code Pro', monospace;
     font-size: 2.25em;
     margin: 0 auto;
@@ -27,7 +28,8 @@ address {
 }
 
 span {
-    color: #fa0075;
+    /*color: #fa0075;*/
+    color: #FA00C3;
 }
 
 a { 
@@ -120,7 +122,8 @@ nav ul li a {
 }
 
 .portfolio a:visited { 
-    color: #fa0075;
+    /*color: #fa0075;*/
+    color: #FA00C3;
 }
 
 #portfolio-section h2 {
