@@ -25,15 +25,21 @@
     <div class="container">
         <header>
             <div class="full-width">
-                <h1>&lt;noel arzola | web developer /&gt;</h1>
-            <div class="header-divider"></div>
-                <nav>
+                <div class="nav-box">
+                    <h1>&lt;noel arzola | web developer /&gt;</h1>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fas fa-bars" id="hamburgesa"></i>
+                    </a>
+                </div>
+                <nav id="nav">
                     <ul>
                         <li><a href="#portfolio-section">portfolio</a></li>
                         <li><a href="#about">about</a></li>
                         <li><a href="#contact">contact</a></li>
                     </ul>
                 </nav>
+            <div class="header-divider"></div>
+                
             </div>
         </header>
         
@@ -259,6 +265,23 @@
             </div>
         </footer>
     </div> <!--End Container-->
+
+    <script>
+        /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+        function myFunction() {
+            let x = document.getElementById("nav");
+            let y = document.getElementById("hamburgesa");
+            let z = document.getElementsByClassName("icon");
+            if (x.style.display === "flex") {
+                x.style.display = "none";
+                y.style.color = "white";
+
+            } else {
+                x.style.display = "flex";
+                y.style.color = "#FA00C3";
+              }
+            };
+    </script>
 </body>
 
 </html>
