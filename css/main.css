@@ -70,6 +70,28 @@ header h1 {
     height: 1px;
 }
 
+.nav-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icon {
+    color: white;
+}
+
+.icon:hover {
+    color: #FA00C3;
+}
+
+#nav {
+    display: none;
+}
+
+nav a:hover {
+    color: #FA00C3;
+}
+
 header nav {
     display: flex;
     font-size: 1.25em;
@@ -245,6 +267,14 @@ footer p {
         width: 33.33%;
     }
 
+    /****** Nav ******/
+    .nav-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1em;
+    }
+
     /****** Portfolio ******/
     .portfolio {
         flex-flow: row wrap;
@@ -324,6 +354,14 @@ footer p {
     }
 
     .header-divider {
+        display: none;
+    }
+
+    #nav {
+        display: block;
+    }
+
+    .icon {
         display: none;
     }
 
