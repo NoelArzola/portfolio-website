@@ -3,17 +3,43 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Rogue Pickings</title>
+        <title>Rogue Pickings | Brush Up Those Skills!</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/f95b13903c.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <div class="container">
             <header>
-                <h1><span>rogue</span> pickings</h1>
-                <nav>
+                <h1 class="large-screen"><span>rogue</span> pickings</h1>
+
+                <!-- Mobile/Tablet Navigation Menu -->
+                <div class="topnav">
+                    <div class="mobile-nav">
+                        <a href="#home" class="active">
+                            <h1><span>rogue</span> pickings</h1>
+                        </a>
+                        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                    </div>
+                    
+
+                    <!-- Navigation links (hidden by default) -->
+                    <div id="hamburger-links">
+                        <a href="#about">About</a>
+                        <a href="#menu">Menu</a>
+                        <a href="#locations">Locations</a>
+                        <a href="#gallery">Gallery</a>
+                        <a href="#reviews">Reviews</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+
+                <nav class="large-screen">
                     <ul>
                         <li>
                             <a href="">About</a>
@@ -66,5 +92,17 @@
                 <h4>Powered by lots of <span>fresh</span> ingredients.</h4>
             </footer>
         </div>
+
+        <script>
+            /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+            function myFunction() {
+            let x = document.getElementById("hamburger-links");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+              }
+            }
+        </script>
     </body>
 </html>
