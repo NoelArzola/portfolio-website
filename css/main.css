@@ -66,7 +66,7 @@ header h1 {
 }
 
 .header-divider {
-    background: #fa0075;
+    background: #FA00C3;
     height: 1px;
 }
 
@@ -78,10 +78,6 @@ header h1 {
 
 .icon {
     color: white;
-}
-
-.icon:hover {
-    color: #FA00C3;
 }
 
 #nav {

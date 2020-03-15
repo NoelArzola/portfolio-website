@@ -12,16 +12,20 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 1em;
+	
 }
 
-.container{
+.container {
 	max-width: 1200px;
 	width: 90%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-flow: row wrap;
+}
+
+.large-screen {
+	display: none;
 }
 
 h1,
@@ -69,7 +73,6 @@ header {
 header h1 {
 	margin: 0;
 	padding: 38px 20px 20px 20px;
-	border-bottom: 3px solid #77a466;
 	width: 100%;
 }
 header h1 span {
@@ -95,6 +98,49 @@ header nav ul li a{
 	text-decoration: none;
 	color:#77a466;
 }
+
+/**** Hamburger Menu ****/
+
+.topnav {
+	overflow: hidden;
+	position: relative;
+	padding-bottom: 40px;
+}
+
+.topnav .mobile-nav {
+	display: flex;
+	align-items: center;
+	border-bottom: 3px solid #77a466;
+}
+
+.topnav #hamburger-links {
+	display: none;
+}
+
+.topnav a {
+  color: #77a466;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon { /*come back*/
+	display: block;
+	height: 0;
+}
+
+/* Add a grey background color on mouse-over COME BACK*/
+#hamburger-links a:hover {
+	background-color: whitesmoke;
+	color: #77a466; 
+  }
+
+  /* Style the active link (or home/logo) COME BACK */
+/*.active {
+	background-color: #4CAF50;
+	color: white;
+}*/
 
 /*The widths are in a percentage!*/
 .top-section,
@@ -189,6 +235,14 @@ footer span {
 
 @media only screen and (min-width: 1200px) {
 
+	.large-screen {
+		display: block;
+	}
+
+	.topnav {
+		display: none;
+	}
+
 	/*The widths are in a percentage!*/
 	header { 
 		justify-content: space-between;
@@ -203,6 +257,7 @@ footer span {
 		border-bottom: none;
 		text-align: left;
 	}
+
 	header h1 span {
 		color: #77a466;
 	}
