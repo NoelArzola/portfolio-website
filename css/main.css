@@ -65,6 +65,11 @@ header h1 {
     justify-content: center;
 }
 
+#home-link {
+    color: white;
+    text-decoration: none;
+}
+
 .header-divider {
     background: #FA00C3;
     height: 1px;
