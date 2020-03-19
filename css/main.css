@@ -254,6 +254,33 @@ footer p {
     text-align: center;
 }
 
+/****************Services Page****************/
+.services {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+}
+
+.service-1,
+.service-2,
+.service-3,
+.service-4 {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 2em;
+}
+
+.services h3 {
+  margin: .5em 0 0 0;
+}
+
+.services i {
+  color: #FA00C3;
+  font-size: 2em;
+}
+
 /****** Tablet Styles ******/
 
 @media only screen and (min-width: 768px) {
@@ -303,6 +330,25 @@ footer p {
     /****** Footer ******/
     footer {
         flex-flow: row wrap;
+    }
+
+    /****************Services Page****************/
+    .services {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
+}
+
+    .service-1,
+    .service-2,
+    .service-3,
+    .service-4 {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        flex: 1 40%;
     }
 
 }
