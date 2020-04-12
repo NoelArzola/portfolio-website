@@ -282,7 +282,8 @@ footer p {
 .service-1,
 .service-2,
 .service-3,
-.service-4 {
+.service-4,
+.service-5 {
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -366,20 +367,24 @@ footer p {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-
-}
+    }
 
     .service-1,
     .service-2,
     .service-3,
-    .service-4 {
+    .service-4,
+    .service-5 {
         display: flex;
         flex-flow: column;
         justify-content: center;
         align-items: center;
         flex: 1 40%;
+        height: 100%;
     }
 
+    .service-5 p {
+        width: 70%;
+    }
 }
 
 /****** Desktop Styles ******/
