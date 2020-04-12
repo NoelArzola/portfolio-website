@@ -313,6 +313,17 @@ footer p {
         padding: 0 1em;
     }
 
+    /*****Hero Area *****/
+    #main-section p {
+        margin: auto;
+        padding-top: 3em;
+        padding-right: 6em;
+    }
+    
+    button {
+        margin: auto;
+    }
+
     /****** Portfolio ******/
     .portfolio {
         flex-flow: row wrap;
@@ -444,7 +455,12 @@ footer p {
 
     #main-section p {
         font-size: 3em;
-        padding: 1.25em 0 0 1.5em;
+        padding-bottom: 2.5em;
+        margin-right: 2em;
+    }
+
+    button {
+        display: none;
     }
 
     /****** Portfolio ******/
