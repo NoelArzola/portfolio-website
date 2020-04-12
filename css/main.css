@@ -137,12 +137,15 @@ nav ul li a {
     padding: 0 1em 0 0;
 }
 
-button {
+#service-button {
     background-color: #FA00C3;
     border: 3px solid #1f202b;
-    height: 3em;
     width: 10em;
-    margin-left: 6em;
+    margin-left: 5em;
+    text-decoration: none;
+    color: white;
+    padding: 1em 1em;
+    text-align: center;
 }
 
 /****** Portfolio ******/
@@ -320,7 +323,7 @@ footer p {
         padding-right: 6em;
     }
     
-    button {
+    #service-button {
         margin: auto;
     }
 
@@ -459,7 +462,7 @@ footer p {
         margin-right: 2em;
     }
 
-    button {
+    #service-button {
         display: none;
     }
 
