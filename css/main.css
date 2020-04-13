@@ -333,12 +333,9 @@ footer p {
         flex-flow: row wrap;
         justify-content: center;
         align-items: stretch;
+        width: 100%;
     }     
 
-    .portfolio {
-        width: 100%;
-    }
-    
     .portfolio div,
     .portfolio a {
         flex: 0 0 40%;
@@ -426,7 +423,7 @@ footer p {
     header h1 {
         display: block;
         font-size: 1.25em;
-        padding-left: 1.4em;
+        padding-left: .33em;
     }
 
     .header-divider {
@@ -477,12 +474,8 @@ footer p {
         align-items: stretch;
         flex-flow: row wrap;
         justify-content: space-around;
-        padding: 0 3.16666666em;
     }
 
-    .portfolio {
-        width: 89.5%;
-    }
 
     .portfolio div,
     .portfolio h3,
