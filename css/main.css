@@ -1,249 +1,250 @@
 /****** Base Styles ******/
 
 body {
-    background: #1f202b;
-    color: #ffffff;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1em;
-    font-weight: 400;
-    margin: 0px auto;
+  background: #1f202b;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  margin: 0px auto;
 }
 
 h2 {
-    /*color: #fa0075; Changing for accessibility if I can stand it*/
-    color: #FA00C3;
-    font-family: 'Source Code Pro', monospace;
-    font-size: 2.25em;
-    margin: 0 auto;
-    padding: 1em 0;
-    text-align: center; 
+  /*color: #fa0075; Changing for accessibility if I can stand it*/
+  color: #fa00c3;
+  font-family: "Source Code Pro", monospace;
+  font-size: 2.25em;
+  margin: 0 auto;
+  padding: 1em 0;
+  text-align: center;
 }
 
 h3 {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 address {
-    font-style: normal;
+  font-style: normal;
 }
 
 span {
-    /*color: #fa0075;*/
-    color: #FA00C3;
+  /*color: #fa0075;*/
+  color: #fa00c3;
 }
 
-a { 
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
 /****** Grid Stuff ******/
 
 .container {
-    margin: 0 auto;
-    width: 100%;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1305px;
 }
 
 .full-width {
-    width: 100%;
+  width: 100%;
 }
 
 .half-width {
-    width: 50%;
+  width: 50%;
 }
 
 .third-width {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /****** Header ******/
 
 header h1 {
-    display: flex;
-    font-size: 1.25em;
-    font-weight: 400;
-    justify-content: center;
+  display: flex;
+  font-size: 1.25em;
+  font-weight: 400;
+  justify-content: center;
 }
 
 #home-link {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 .header-divider {
-    background: #FA00C3;
-    height: 1px;
+  background: #fa00c3;
+  height: 1px;
 }
 
 .nav-box {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .icon {
-    color: white;
+  color: white;
 }
 
 #nav {
-    display: none;
+  display: none;
 }
 
 nav a:hover {
-    color: #FA00C3;
+  color: #fa00c3;
 }
 
 header nav {
-    display: flex;
-    font-size: 1.25em;
-    justify-content: center;
-    text-align: center;
+  display: flex;
+  font-size: 1.25em;
+  justify-content: center;
+  text-align: center;
 }
 
 nav ul {
-    padding: 0;
+  padding: 0;
 }
 
 nav ul li {
-    list-style-type: none;
-    padding: 1.5em 0;
+  list-style-type: none;
+  padding: 1.5em 0;
 }
 
 nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 /****** Hero Area ******/
 
 #main-section {
-    align-content: center;
-    background: url(../img/hero-background.png) center no-repeat #333;
-    background-size: cover;
-    display: flex;
-    flex-flow: column wrap;
-    height: 100%;
-    justify-content: center;
-    min-height: 500px;
-    width: 100%;
+  align-content: center;
+  background: url(../img/hero-background.png) center no-repeat #333;
+  background-size: cover;
+  display: flex;
+  flex-flow: column wrap;
+  height: 100%;
+  justify-content: center;
+  min-height: 500px;
+  width: 100%;
 }
 
 #main-section p {
-    font-family: 'Source Code Pro', monospace;
-    font-size: 2.25em;
-    font-weight: 600;
-    margin-bottom: 55px;
-    margin-top: 0;
-    padding: 0 1em 0 0;
+  font-family: "Source Code Pro", monospace;
+  font-size: 2.25em;
+  font-weight: 600;
+  margin-bottom: 55px;
+  margin-top: 0;
+  padding: 0 1em 0 0;
 }
 
 #service-button {
-    background-color: #FA00C3;
-    border: 3px solid #1f202b;
-    width: 10em;
-    margin-left: 5em;
-    text-decoration: none;
-    color: white;
-    padding: 1em 1em;
-    text-align: center;
+  background-color: #fa00c3;
+  border: 3px solid #1f202b;
+  width: 10em;
+  margin-left: 5em;
+  text-decoration: none;
+  color: white;
+  padding: 1em 1em;
+  text-align: center;
 }
 
 /****** Portfolio ******/
 
 .portfolio {
-    align-items: center;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
 }
 
-.portfolio a:visited { 
-    /*color: #fa0075;*/
-    color: #FA00C3;
+.portfolio a:visited {
+  /*color: #fa0075;*/
+  color: #fa00c3;
 }
 
 #portfolio-section h2 {
-    padding: 1em 0;
+  padding: 1em 0;
 }
 
 .portfolio h3,
 .portfolio h4 {
-    margin: 0;
+  margin: 0;
 }
 
 .portfolio div,
 .portfolio h3,
 .portfolio h4,
 .portfolio p {
-    display: none;
+  display: none;
 }
 
 .portfolio-image {
-    padding: 1em 0 2em 0;
-    width: 100%;
+  padding: 1em 0 2em 0;
+  width: 100%;
 }
 
 .portfolio h3 {
-    padding-bottom: .3125em;
+  padding-bottom: 0.3125em;
 }
 
 .portfolio h4 {
-    font-weight: normal;
+  font-weight: normal;
 }
 
 /****** About ******/
 
 #about {
-    padding-top: 1.11em;
+  padding-top: 1.11em;
 }
 
 .about-section {
-    background: url(../img/about-me.png) center no-repeat #333;
-    background-size: cover;
-    color: black;
-    height: 100%;
-    min-height: 515px;
-    width: 100%;
+  background: url(../img/about-me.png) center no-repeat #333;
+  background-size: cover;
+  color: black;
+  height: 100%;
+  min-height: 515px;
+  width: 100%;
 }
 
 .about-section h3,
 .about-section p {
-    padding: 0 1em;
+  padding: 0 1em;
 }
 
 .about-section .third-paragraph {
-    padding-bottom: 8em;
+  padding-bottom: 8em;
 }
 
 /****** Footer ******/
 
 footer {
-    align-content: center;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
+  align-content: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
 }
 
 footer .third-width {
-    text-align: center;
+  text-align: center;
 }
 
 footer h2 {
-    padding: 1em 0 1em 0;
+  padding: 1em 0 1em 0;
 }
 
 footer h3 {
-    padding: 1.875em;
+  padding: 1.875em;
 }
 
 footer a {
-    color: #ffffff;
-    text-decoration: none;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 footer p {
-    line-height: 35px;
-    margin: 0 auto;
+  line-height: 35px;
+  margin: 0 auto;
 }
 
 /*footer img {
@@ -252,31 +253,31 @@ footer p {
 }*/
 
 .fa-stack {
-    padding: 0 .5em;
+  padding: 0 0.5em;
 }
 
 .fa-linkedin-in,
-.fa-twitter { 
-    color: #1f202b; 
-    font-size: 1em; 
+.fa-twitter {
+  color: #1f202b;
+  font-size: 1em;
 }
 
 .fa-github {
-    font-size: 2em;
-    vertical-align: bottom;
+  font-size: 2em;
+  vertical-align: bottom;
 }
 
 #copyright {
-    font-size: 1.125em;
-    padding: 3.125em 0 .625em 0;
-    text-align: center;
+  font-size: 1.125em;
+  padding: 3.125em 0 0.625em 0;
+  text-align: center;
 }
 
 /****************Services Page****************/
 .services {
-    display: flex;
-    flex-flow: column;
-    text-align: center;
+  display: flex;
+  flex-flow: column;
+  text-align: center;
 }
 
 .service-1,
@@ -284,260 +285,256 @@ footer p {
 .service-3,
 .service-4,
 .service-5 {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2em 2em;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 2em;
 }
 
 .services h3 {
-  margin: .5em 0 0 0;
+  margin: 0.5em 0 0 0;
 }
 
 .services i {
-  color: #FA00C3;
+  color: #fa00c3;
   font-size: 2em;
 }
 
 /****** Tablet Styles ******/
 
 @media only screen and (min-width: 768px) {
+  /****** Base ******/
+  .third-width {
+    width: 33.33%;
+  }
 
-    /****** Base ******/
-    .third-width {
-        width: 33.33%;
-    }
+  /****** Nav ******/
+  .nav-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+  }
 
-    /****** Nav ******/
-    .nav-box {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 1em;
-    }
+  /*****Hero Area *****/
+  #main-section p {
+    margin: auto;
+    padding-top: 3em;
+    padding-right: 6em;
+  }
 
-    /*****Hero Area *****/
-    #main-section p {
-        margin: auto;
-        padding-top: 3em;
-        padding-right: 6em;
-    }
-    
-    #service-button {
-        margin: auto;
-    }
+  #service-button {
+    margin: auto;
+  }
 
-    /****** Portfolio ******/
-    .portfolio {
-        flex-flow: row wrap;
-        justify-content: center;
-        align-items: stretch;
-        width: 100%;
-    }     
+  /****** Portfolio ******/
+  .portfolio {
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+  }
 
-    .portfolio div,
-    .portfolio a {
-        flex: 0 0 40%;
-        padding: 2em 1em;
-    }
-    
-    .portfolio .portfolio-image { /*TABLET ONLY!*/
-        height: 12.80em;
-    }
-    
-    /****** About ******/
+  .portfolio div,
+  .portfolio a {
+    flex: 0 0 40%;
+    padding: 2em 1em;
+  }
 
-    .about-section h3,
-    .about-section p {
-        padding-left: 2em;
-        width: 70%;
-    }
+  .portfolio .portfolio-image {
+    /*TABLET ONLY!*/
+    height: 12.8em;
+  }
 
-    /****** Footer ******/
-    footer {
-        flex-flow: row wrap;
-    }
+  /****** About ******/
 
-    /****************Services Page****************/
-    .services {
+  .about-section h3,
+  .about-section p {
+    padding-left: 2em;
+    width: 70%;
+  }
+
+  /****** Footer ******/
+  footer {
+    flex-flow: row wrap;
+  }
+
+  /****************Services Page****************/
+  .services {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    }
+  }
 
-    .service-1,
-    .service-2,
-    .service-3,
-    .service-4,
-    .service-5 {
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-        align-items: center;
-        flex: 1 40%;
-        height: 100%;
-    }
+  .service-1,
+  .service-2,
+  .service-3,
+  .service-4,
+  .service-5 {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 40%;
+    height: 100%;
+  }
 
-    .service-5 p {
-        width: 70%;
-    }
+  .service-5 p {
+    width: 70%;
+  }
 }
 
 /****** Desktop Styles ******/
 @media only screen and (min-width: 1200px) {
-    
-    /****** Base Styles ******/
+  /****** Base Styles ******/
 
-    body {
-        font-size: 1.5em;
-    }
+  body {
+    font-size: 1.5em;
+  }
 
-    .container {   
-        width: 100%;
-        
-    }
+  .container {
+    width: 100%;
+  }
 
-    .half-width {
-        width: 47%;
-    }
+  .half-width {
+    width: 47%;
+  }
 
-    .third-width {
-        width: 33%;
-    }
-    
-    h2 {
-        font-size: 1.5em;
-        padding: 1.6666666em 0;
-    }
+  .third-width {
+    width: 33%;
+  }
 
-    /****** Header ******/
+  h2 {
+    font-size: 1.5em;
+    padding: 1.6666666em 0;
+  }
 
-    header .full-width {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
-        
-    }
+  /****** Header ******/
 
-    header h1 {
-        display: block;
-        font-size: 1.25em;
-        padding-left: .33em;
-    }
+  header .full-width {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
 
-    .header-divider {
-        display: none;
-    }
+  header h1 {
+    display: block;
+    font-size: 1.25em;
+    padding-left: 0.33em;
+  }
 
-    #nav {
-        display: block;
-    }
+  .header-divider {
+    display: none;
+  }
 
-    .icon {
-        display: none;
-    }
+  #nav {
+    display: block;
+  }
 
-    header nav {
-        display: block;
-        font-size: 1em; 
-        padding-right: .416666666em;   
-    }
+  .icon {
+    display: none;
+  }
 
-    nav ul li {
-        display: inline-block;
-        padding: 0 1em;
-    }
+  header nav {
+    display: block;
+    font-size: 1em;
+    padding-right: 0.416666666em;
+  }
 
-    /****** Hero Area ******/
+  nav ul li {
+    display: inline-block;
+    padding: 0 1em;
+  }
 
-    #main-section {
-        justify-content: flex-start;
-        margin: 0 auto;
-        min-height: 727px;
-        width: 100%;
-    }
+  /****** Hero Area ******/
 
-    #main-section p {
-        font-size: 3em;
-        padding-bottom: 2.5em;
-        margin-right: 2em;
-    }
+  #main-section {
+    justify-content: flex-start;
+    margin: 0 auto;
+    min-height: 727px;
+    width: 100%;
+  }
 
-    #service-button {
-        display: none;
-    }
+  #main-section p {
+    font-size: 3em;
+    padding-bottom: 2.5em;
+    margin-right: 2em;
+  }
 
-    /****** Portfolio ******/
+  #service-button {
+    display: none;
+  }
 
-    .portfolio {
-        align-items: stretch;
-        flex-flow: row wrap;
-        justify-content: space-around;
-    }
+  /****** Portfolio ******/
 
+  .portfolio {
+    align-items: stretch;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
 
-    .portfolio div,
-    .portfolio h3,
-    .portfolio h4,
-    .portfolio p {
-        display: block;
-    }
+  .portfolio div,
+  .portfolio h3,
+  .portfolio h4,
+  .portfolio p {
+    display: block;
+  }
 
-    .portfolio div,
-    .portfolio a {
-        flex: 1 0 32%;
-        padding: 2em 1em;
-        justify-content: center;
-    }
+  .portfolio div,
+  .portfolio a {
+    flex: 1 0 32%;
+    padding: 2em 1em;
+    justify-content: center;
+  }
 
-    .portfolio .portfolio-image {
-        height: unset;
-        padding: 0;
-    }
+  .portfolio .portfolio-image {
+    height: unset;
+    padding: 0;
+  }
 
-    .left-side-text {
-        text-align: right;
-    }
+  .left-side-text {
+    text-align: right;
+  }
 
-    .portfolio .portfolio-text-block a {
-        padding: 0;
-    }
+  .portfolio .portfolio-text-block a {
+    padding: 0;
+  }
 
-    /****** About ******/
+  /****** About ******/
 
-    .about-section {
-        margin: 0 auto;
-        min-height: 700px;
-        width: 100%;
-    }
+  .about-section {
+    margin: 0 auto;
+    min-height: 700px;
+    width: 100%;
+  }
 
-    #about {
-        padding-top: 1.6666666em;
-    }
+  #about {
+    padding-top: 1.6666666em;
+  }
 
-    .about-section h3 {
-        margin-top: 0;
-        padding: 0 0 0 3.562em;
-        width: 50%;
-    }
+  .about-section h3 {
+    margin-top: 0;
+    padding: 0 0 0 3.562em;
+    width: 50%;
+  }
 
-    .about-section p {
-        padding: 0 0 0 4.17em;
-        width: 43.5%;
-    }
+  .about-section p {
+    padding: 0 0 0 4.17em;
+    width: 43.5%;
+  }
 
-    .about-section .third-paragraph {
-        padding-bottom: 4.16666666em;
-    }
+  .about-section .third-paragraph {
+    padding-bottom: 4.16666666em;
+  }
 
-    /****** Footer ******/
+  /****** Footer ******/
 
-    footer h2 {
-        padding: 1.6666666em 0 1.090833333em 0;
-    }
+  footer h2 {
+    padding: 1.6666666em 0 1.090833333em 0;
+  }
 
-    #copyright  {
-        font-size: .75em;
-    }
+  #copyright {
+    font-size: 0.75em;
+  }
 }
