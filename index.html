@@ -1,289 +1,560 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>Noel Arzola | Web Developer</title>
+    <meta
+      name="description"
+      content="Portfolio of Noel Arzola an experienced Front-End Web Developer in Belpre Ohio that uses HTML CSS JavaScript jQuery PHP WordPress and SQL"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <meta charset="utf-8">
-  <title>Noel Arzola | Web Developer</title>
-  <meta name="description" content="Portfolio of Noel Arzola an experienced Front-End Web Developer in Belpre Ohio that uses HTML CSS JavaScript jQuery PHP WordPress and SQL">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" href="icon.png" />
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,600&display=swap"
+      rel="stylesheet"
+    />
 
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,600&display=swap" rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/f95b13903c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="js/script.js"></script>
 
-  <script src="https://kit.fontawesome.com/f95b13903c.js" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="js/script.js"></script>
+    <meta name="theme-color" content="#fafafa" />
+  </head>
 
-  <meta name="theme-color" content="#fafafa">
-</head>
-
-<body>
+  <body>
     <div class="container">
-        <header>
-            <div class="full-width">
-                <div class="nav-box">
-                    <a id="home-link" href="#">
-                        <h1>&lt;noel arzola | web developer /&gt;</h1>
-                    </a>
-                    <a href="javascript:void(0);" class="icon" onclick="navButton()">
-                        <i class="fas fa-bars" id="hamburgesa"></i>
-                    </a>
-                </div>
-                <nav id="nav">
-                    <ul>
-                        <li><a href="services/index.html">services</a></li>
-                        <li><a href="#portfolio-section">portfolio</a></li>
-                        <li><a href="#about">about</a></li>
-                        <li><a href="#contact">contact</a></li>
-                    </ul>
-                </nav>
-            <div class="header-divider"></div>
-                
+      <!-- The overlay -->
+      <div id="myNav" class="overlay">
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+
+        <!-- Overlay content -->
+        <div class="overlay-content">
+          <a href="services/index.html">services</a>
+          <a href="#portfolio-section">portfolio</a>
+          <a href="#about">about</a>
+          <a href="#contact">contact</a>
+        </div>
+      </div>
+      <header>
+        <div class="full-width">
+          <div class="nav-box">
+            <a id="home-link" href="#">
+              <h1>&lt;noel arzola | web developer /&gt;</h1>
+            </a>
+
+            <a href="javascript:void(0);" class="icon" onclick="openNav()">
+              <i class="fas fa-bars" id="hamburgesa"></i>
+            </a>
+          </div>
+
+          <nav id="nav">
+            <ul>
+              <li><a href="services/index.html">services</a></li>
+              <li><a href="#portfolio-section">portfolio</a></li>
+              <li><a href="#about">about</a></li>
+              <li><a href="#contact">contact</a></li>
+            </ul>
+          </nav>
+          <div class="header-divider"></div>
+        </div>
+      </header>
+
+      <main>
+        <div class="full-width" id="main-section">
+          <p>
+            let's <span>code</span> <br />
+            something cool
+          </p>
+          <a id="service-button" href="services/index.html">view services ></a>
+        </div>
+
+        <section>
+          <div class="full-width">
+            <h2 id="portfolio-section">my portfolio</h2>
+          </div>
+
+          <div class="portfolio">
+            <!--Begin alternating text and images in the portfolio-->
+
+            <a href="https://www.chicnextdoor.style">
+              <picture>
+                <source type="image/webp" srcset="img/chicnextdoor.webp" />
+                <img
+                  class="portfolio-image"
+                  src="img/chicnextdoor.png"
+                  alt="Snapshot of the Chic Next Door website"
+                />
+              </picture>
+            </a>
+
+            <div class="portfolio-text-block">
+              <h3>Chic Next Door</h3>
+              <h4>Custom Themed WordPress and PHP</h4>
+              <p>
+                This is a responsive mobile first brand site with blog features
+                for Chic Next Door - a fashion, beauty, and style influencer.
+                Themed from scratch from an Adobe XD design file. Features two
+                full HTML pages and WordPress with three custom posts and
+                archives types. Also feautured is a social media page that
+                includes an Instagram feed and a Contact page that sends
+                submissions to the client's email.
+              </p>
             </div>
-        </header>
-        
-        <main>
-            <div class="full-width" id="main-section">
-                <p>let's <span>code</span>
-                <br> something cool</p>
-                <a id="service-button" href="services/index.html">view services ></a>
+
+            <div class="portfolio-text-block left-side-text">
+              <h3>Ronin Martial Arts Academy</h3>
+              <h4>Multi-page Responsive Business Site Design</h4>
+              <p>
+                This is a site that was overhauled for a Martial Arts studio. I
+                was hired to design a more modern and visually pleasing
+                experience, on all screen sizes, to increase site traffic and
+                bring in new business. I updated the fonts, color, layouts, all
+                with subtle nods to the
+                <a
+                  href="https://drive.google.com/file/d/1p018Rny6SFv4SCi1frGoLCF4syDitG98/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener"
+                  ><span>original version of the site.</span></a
+                >
+                Requested re-designs included a new events page to highlight
+                promotions, a new gallery page, and a sliding gallery on the
+                main page displaying class options.
+              </p>
             </div>
 
-            <section>
-                <div class="full-width">
-                <h2 id="portfolio-section">my portfolio</h2>  
-                </div>
+            <a href="https://www.roninmaa.com" target="_blank" rel="noopener">
+              <picture>
+                <source type="image/webp" srcset="img/roninmaa.webp" />
+                <img
+                  class="portfolio-image"
+                  src="img/roninmaa.png"
+                  alt="Snapshot of the Ronin Martial Arts Academy website"
+                />
+              </picture>
+            </a>
 
-                <div class="portfolio"> <!--Begin alternating text and images in the portfolio-->
-                    
-                    <a href="https://www.chicnextdoor.style">
-                        <picture>
-                            <source type="image/webp" srcset="img/chicnextdoor.webp">
-                            <img class="portfolio-image" src="img/chicnextdoor.png" alt="Snapshot of the Chic Next Door website">
-                        </picture>
-                    </a>                
+            <a
+              href="https://www.noelarzola.com/accelerate"
+              target="_blank"
+              rel="noopener"
+            >
+              <picture>
+                <source type="image/webp" srcset="img/accelerate.webp" />
+                <img
+                  class="portfolio-image"
+                  src="img/accelerate.png"
+                  alt="Snapshot of the Accelerate Marketing website"
+                />
+              </picture>
+            </a>
 
-                    <div class="portfolio-text-block">
-                        <h3>Chic Next Door</h3>
-                        <h4>Custom Themed WordPress and PHP</h4>
-                        <p>This is a responsive mobile first brand site with blog features for Chic Next Door - a fashion, beauty, and style influencer. Themed from scratch from an Adobe XD design file. Features two full HTML pages and WordPress with three custom posts and archives types. Also feautured is a social media page that includes an Instagram feed and a Contact page that sends submissions to the client's email.</p>
-                    </div>
-                    
-                    <div class="portfolio-text-block left-side-text">
-                        <h3>Ronin Martial Arts Academy</h3>
-                        <h4>Multi-page Responsive Business Site Design</h4>
-                        <p>This is a site that was overhauled for a Martial Arts studio. I was hired to design a more modern and visually pleasing experience, on all screen sizes, to increase site traffic and bring in new business. I updated the fonts, color, layouts, all with subtle nods to the <a href="https://drive.google.com/file/d/1p018Rny6SFv4SCi1frGoLCF4syDitG98/view?usp=sharing" target="_blank" rel="noopener"><span>original version of the site.</span></a> Requested re-designs included a new events page to highlight promotions, a new gallery page, and a sliding gallery on the main page displaying class options.</p>
-                    </div>
-
-                    <a href="https://www.roninmaa.com" target="_blank" rel="noopener">
-                        <picture>
-                            <source type="image/webp" srcset="img/roninmaa.webp">
-                            <img class="portfolio-image" src="img/roninmaa.png" alt="Snapshot of the Ronin Martial Arts Academy website">
-                        </picture>
-                    </a>
-
-                    <a href="https://www.noelarzola.com/accelerate" target="_blank" rel="noopener">
-                        <picture>
-                            <source type="image/webp" srcset="img/accelerate.webp">
-                            <img class="portfolio-image" src="img/accelerate.png" alt="Snapshot of the Accelerate Marketing website">
-                        </picture>
-                    </a>
-
-                    <div class="portfolio-text-block">
-                        <h3>Accelerate Marketing</h3>
-                        <h4>Custom Themed WordPress and PHP</h4>
-                        <p>This is a Wordpress site with an eye-catching homepage equipped with featured work, blog entries, and a social media feed. There are custom pages and post types throughout the site. This includes a contact page that contains a great contact form and also a newsletter sign-up.</p>
-                    </div>
-
-                    <div class="portfolio-text-block left-side-text">
-                        <h3>My WordPress Blog</h3>
-                        <h4>Custom Themed WordPress and PHP</h4>
-                        <p>This is blog I created to showcase my custom WordPress theme talents. There is a lot of custom PHP going on here to create a unique yet familiar experience for visitors. I'm not much of a blogger, so while I haven't put much content on there, there are some pretty cool articles and resources posted for techies.</p>
-                    </div>
-
-                    <a href="https://www.noelarzola.com/blog" target="_blank" rel="noopener">
-                        <picture>
-                            <source type="image/webp" srcset="img/blog.webp">
-                            <img class="portfolio-image" src="img/blog.png" alt="Snapshot of the blog landing page">
-                        </picture>
-                    </a>
-
-                    <a href="https://www.noelarzola.com/unplugged-retreat" target="_blank" rel="noopener">
-                        <picture>
-                            <source type="image/webp" srcset="img/unplugged-retreat.webp">
-                            <img class="portfolio-image" src="img/unplugged-retreat.png" alt="Snapshot of the Unplugged website">
-                        </picture>
-                    </a>
-                    
-                    <div class="portfolio-text-block">
-                        <h3>Unplugged Retreat Website</h3>
-                        <h4>Mobile first HTML 5 &amp; CSS from Photoshop Design Comps</h4>
-                        <p>This was created from the ground up from a set of three design comps for mobile, tablet, and desktop. It is a completely responsive multi-page website made using Flexbox with perfectly scaling images and text. Using Photoshop I pulled measurements, font-sizes, and line-heights to create an exact replica for all three experiences. This and my personal site are my favorite pieces of work.</p>
-                    </div>
-
-                    <div class="portfolio-text-block left-side-text">
-                        <h3>Rogue Pickings Website</h3>
-                        <h4>HTML 5 &amp; CSS from Photoshop Design Comp</h4>
-                        <p>This is a multi-page site made from scratch for a fictional food truck company. Using the Photoshop Design Comp I pulled the images, dimensions, and font styles. Using all of that data I created a base in HTML and then created the site and designed it to match the design in CSS.</p>
-                    </div>
-                    
-                    <a href="https://www.noelarzola.com/rogue-pickings" target="_blank" rel="noopener">
-                        <picture>
-                            <source type="image/webp" srcset="img/rogue-pickings.webp">
-                            <img class="portfolio-image" src="img/rogue-pickings.png" alt="Snapshot of the Rogue Pickings website">
-                        </picture>
-                    </a>
-                    
-                    <a href="https://www.noelarzola.com/rogue-pickings-responsive" target="_blank" rel="noopener">
-                        <picture>
-                            <source type="image/webp" srcset="img/rogue-responsive.webp">
-                            <img class="portfolio-image" src="img/rogue-responsive.png" alt="Snapshot of the Rogue Pickings Responsive website">
-                        </picture>
-                    </a>
-                    
-                    <div class="portfolio-text-block">
-                        <h3>Rogue Pickings Website, Mobile First Remix</h3>
-                        <h4>HTML 5 &amp; CSS from Photoshop Design Comp</h4>
-                        <p>This is a project site that was converted from static to responsive. It was good practice taking an already established project and scaling it down for smaller screens and a better user experience. The amount of work that went into this really emphasized why mobile first development is so important and time-saving!</p>
-                    </div>
-                    
-                    <div class="portfolio-text-block left-side-text">
-                        <h3>Jubilee Austen Project</h3>
-                        <h4>HTML5 &amp; CSS Website</h4>
-                        <p>This is a Skillcrush project of a personal website   for a fictional developer also made from a PDC with the HTML and CSS coded from the ground up. It is a single page design that  contains a big, bold, beautiful header with work and contact sections that also stand out.</p>
-                    </div>
-                    
-                    <a href="https://www.noelarzola.com/jubilee-austen" target="_blank" rel="noopener">
-                        <picture>
-                            <source type="image/webp" srcset="img/jubilee.webp">
-                            <img class="portfolio-image" src="img/jubilee.png" alt="Snapshot of the Jubilee Austen website">
-                        </picture>
-                    </a>
-                    
-                    <a href="https://www.noelarzola.com/election-map" target="_blank" rel="noopener">
-                        <picture>
-                            <source type="image/webp" srcset="img/election-map.webp">
-                            <img class="portfolio-image" src="img/election-map.png" alt="Snapshot of the Interactive Election Map">
-                        </picture>
-                    </a>
-                    
-                    <div class="portfolio-text-block">
-                        <h3>Interactive U.S. Election Map</h3>
-                        <h4>HTML, CSS, &amp; JavaScript</h4>
-                        <p>This is an interactive site fueled by JavaScript. At the top of the page it reflects the total votes and declares a winner. As you mouse over the states they will change from gray to the party color of the winner or blue if there is a draw. The table in the bottom corner will display the date, the candidates names, their total votes, and the winner of the state all following the same color scheme. I’ve always loved JavaScript and it was cool working with my first JavaScript framework.</p>
-                    </div>
-                    
-                    <div class="portfolio-text-block left-side-text">
-                        <h3>Magic 8 Ball</h3>
-                        <h4>HTML, CSS, &amp; JavaScript</h4>
-                        <p>The Magic 8 Ball you’ll find here puts my first 8 Ball to shame! The code is where the real beauty is at, it is so much more efficient, clean, and powerful. This interactive site displays an 8 Ball with an interactive button below it. Once you hit the button the ball will shake and you’ll be prompted to enter a question (choose wisely!). After one more shake the answer is revealed! If interested, please check out <a href="https://www.khanacademy.org/computer-programming/spin-off-of-project-magic-8-ball/5424639632965632" target="_blank" rel="noopener"><span>my first 8 Ball</span></a> and my <a href="https://www.khanacademy.org/profile/kaid_1090753923038244403640020/projects" target="_blank" rel="noopener"><span>old coding and programming projects</span></a>.</p>
-                    </div>
-                    
-                    <a href="https://www.noelarzola.com/magic-8-ball" target="_blank" rel="noopener">
-                        <picture>
-                            <source srcset="img/magic-8-ball.webp" type="image/webp">
-                            <img class="portfolio-image" src="img/magic-8-ball.png" alt="Snapshot of the Magic 8 Ball site">
-                        </picture>
-                        
-                    </a>
-                    
-                    <a href="https://www.noelarzola.com/lolcat-clock" target="_blank" rel="noopener">
-                        <picture>
-                            <source srcset="img/lolcat-clock.webp" type="image/webp">
-                            <img class="portfolio-image" src="img/lolcat-clock.jpg" alt="Snapshot of the LOL Cat Clock">
-                        </picture>
-                    </a>
-                    
-                    <div class="portfolio-text-block">
-                        <h3>LOLCat Clock</h3>
-                        <h4>HTML, CSS, &amp; JavaScript</h4>
-                        <p>An interactive clock full of entertaining cat pics. There are four buttons that accept user input. Three are for setting a custom wake-up, lunch, and nap times which will trigger images related to each when the time matches. The fourth is a “PARTY TIME!” button that can be activated at any time, check out what happens when you tap it.</p>
-                    </div>
-
-                    <div class="portfolio-text-block left-side-text">
-                        <h3>Bruce Lee Manifesto</h3>
-                        <h4>HTML & CSS Exercise</h4>
-                        <p>While working on the Holstee Manifesto project I kept dreaming up this site in the back of my head. I don’t know if it’s because Bruce Lee and Holstee sound similar, or if it was the arrangement of inspirational quotes (probably both!). This was a crash course on cross-browser compatibility and required a lot of tweaking to get it just right on all major browsers. It was fun and rewarding. RIP the greatest of all time!</p>
-                    </div>
-                    
-                    <a href="https://www.noelarzola.com/bruce-lee-manifesto" target="_blank" rel="noopener">
-                        <picture>
-                            <source type="image/webp" srcset="img/brucelee-manifesto.webp">
-                            <img class="portfolio-image" src="img/brucelee-manifesto.jpg" alt="Snapshot of the Bruce Lee Manifesto website">
-                        </picture>
-                    </a>
-                    
-                    <a href="https://www.noelarzola.com/holstee-manifesto" target="_blank" rel="noopener">
-                        <picture>
-                            <source srcset="img/holstee.webp" type="image/webp">
-                            <img class="portfolio-image" src="img/holstee.jpg" alt="Snapshot of my Holstee Manifesto exercise">
-                        </picture>
-                    </a>
-                    
-                    <div class="portfolio-text-block">
-                        <h3>Holstee Manifesto Exercise</h3>
-                        <h4>HTML & CSS Exercise</h4>
-                        <p>This was a fun project that involved Rubik’s cubing quotes from the Holstee Manifesto, divs, and padding into a work of art. It was the first project in my Skillcrush Break Into Tech course. It was a great exercise to practice CSS, measurements, padding, margin, and floats.</p>
-                    </div>
-                </div> <!--End Portfolio section-->
-            </section>
-
-            <section>
-                <div class="about-section">
-                    <h2 id="about">about me</h2>
-                    <h3>I am passionate about the web.</h3>
-                    <p>I’m Noel Arzola, a Front-End Developer based in Ohio that works with HTML, CSS, JavaScript, PHP, and WordPress. I take pride in writing clean, efficient code and enjoy making great looking websites.</p>
-                    <p>When I’m not coding or learning and reading more about developing I love spending time with my three kids, riding my motorcycle, lifting weights, and learning foreign languages!</p>
-                    <p class="third-paragraph">Can't wait to work with you!</p>
-                </div>
-            </section>
-        </main>
-        
-        <footer>
-            <div class="full-width">
-                <h2 id="contact">let's connect</h2>
+            <div class="portfolio-text-block">
+              <h3>Accelerate Marketing</h3>
+              <h4>Custom Themed WordPress and PHP</h4>
+              <p>
+                This is a Wordpress site with an eye-catching homepage equipped
+                with featured work, blog entries, and a social media feed. There
+                are custom pages and post types throughout the site. This
+                includes a contact page that contains a great contact form and
+                also a newsletter sign-up.
+              </p>
             </div>
-            <div class="third-width">
-                <h3>Hire me</h3>
-                <address>
-                    <p>740-315-8315<br>
-                    <a href="mailto:noel@noelarzola.com" target="_blank" rel="noopener"><span>noel@noelarzola.com</span></a></p>
-                </address>
-            </div>
-            <div class="third-width">
-                <h3>Follow me</h3>
-                <a href="https://www.twitter.com/arzolacodes" target="_blank" rel="noopener">
-                    <span class="fa-stack">
-                        <i class="fas fa-circle fa-stack-2x"></i>
-                        <i class="fab fa-twitter fa-stack-1x"></i>
-                    </span>
-                </a>
 
-                <a href="https://noelarzola.github.io/" target="_blank" rel="noopener">
-                    <span i class="fab fa-github"></span>
-                </a>
+            <div class="portfolio-text-block left-side-text">
+              <h3>My WordPress Blog</h3>
+              <h4>Custom Themed WordPress and PHP</h4>
+              <p>
+                This is blog I created to showcase my custom WordPress theme
+                talents. There is a lot of custom PHP going on here to create a
+                unique yet familiar experience for visitors. I'm not much of a
+                blogger, so while I haven't put much content on there, there are
+                some pretty cool articles and resources posted for techies.
+              </p>
+            </div>
 
-                <a href="https://www.linkedin.com/in/noelarzola" target="_blank" rel="noopener">
-                    <span class="fa-stack">
-                        <i class="fas fa-circle fa-stack-2x"></i>
-                        <i class="fab fa-linkedin-in fa-stack-1x"></i>
-                    </span>
-                </a>
+            <a
+              href="https://www.noelarzola.com/blog"
+              target="_blank"
+              rel="noopener"
+            >
+              <picture>
+                <source type="image/webp" srcset="img/blog.webp" />
+                <img
+                  class="portfolio-image"
+                  src="img/blog.png"
+                  alt="Snapshot of the blog landing page"
+                />
+              </picture>
+            </a>
+
+            <a
+              href="https://www.noelarzola.com/unplugged-retreat"
+              target="_blank"
+              rel="noopener"
+            >
+              <picture>
+                <source type="image/webp" srcset="img/unplugged-retreat.webp" />
+                <img
+                  class="portfolio-image"
+                  src="img/unplugged-retreat.png"
+                  alt="Snapshot of the Unplugged website"
+                />
+              </picture>
+            </a>
+
+            <div class="portfolio-text-block">
+              <h3>Unplugged Retreat Website</h3>
+              <h4>Mobile first HTML 5 &amp; CSS from Photoshop Design Comps</h4>
+              <p>
+                This was created from the ground up from a set of three design
+                comps for mobile, tablet, and desktop. It is a completely
+                responsive multi-page website made using Flexbox with perfectly
+                scaling images and text. Using Photoshop I pulled measurements,
+                font-sizes, and line-heights to create an exact replica for all
+                three experiences. This and my personal site are my favorite
+                pieces of work.
+              </p>
             </div>
-            <div class="third-width">
-                <h3>Meet me</h3>
-                <p>Belpre, Ohio</p>
-                <p>Let's go to meetups together!</p>
+
+            <div class="portfolio-text-block left-side-text">
+              <h3>Rogue Pickings Website</h3>
+              <h4>HTML 5 &amp; CSS from Photoshop Design Comp</h4>
+              <p>
+                This is a multi-page site made from scratch for a fictional food
+                truck company. Using the Photoshop Design Comp I pulled the
+                images, dimensions, and font styles. Using all of that data I
+                created a base in HTML and then created the site and designed it
+                to match the design in CSS.
+              </p>
             </div>
-            <div id="copyright">
-                <p>Copyright 2020 | Arzola Solutions, LLC</p>
+
+            <a
+              href="https://www.noelarzola.com/rogue-pickings"
+              target="_blank"
+              rel="noopener"
+            >
+              <picture>
+                <source type="image/webp" srcset="img/rogue-pickings.webp" />
+                <img
+                  class="portfolio-image"
+                  src="img/rogue-pickings.png"
+                  alt="Snapshot of the Rogue Pickings website"
+                />
+              </picture>
+            </a>
+
+            <a
+              href="https://www.noelarzola.com/rogue-pickings-responsive"
+              target="_blank"
+              rel="noopener"
+            >
+              <picture>
+                <source type="image/webp" srcset="img/rogue-responsive.webp" />
+                <img
+                  class="portfolio-image"
+                  src="img/rogue-responsive.png"
+                  alt="Snapshot of the Rogue Pickings Responsive website"
+                />
+              </picture>
+            </a>
+
+            <div class="portfolio-text-block">
+              <h3>Rogue Pickings Website, Mobile First Remix</h3>
+              <h4>HTML 5 &amp; CSS from Photoshop Design Comp</h4>
+              <p>
+                This is a project site that was converted from static to
+                responsive. It was good practice taking an already established
+                project and scaling it down for smaller screens and a better
+                user experience. The amount of work that went into this really
+                emphasized why mobile first development is so important and
+                time-saving!
+              </p>
             </div>
-        </footer>
-    </div> <!--End Container-->
-</body>
+
+            <div class="portfolio-text-block left-side-text">
+              <h3>Jubilee Austen Project</h3>
+              <h4>HTML5 &amp; CSS Website</h4>
+              <p>
+                This is a Skillcrush project of a personal website for a
+                fictional developer also made from a PDC with the HTML and CSS
+                coded from the ground up. It is a single page design that
+                contains a big, bold, beautiful header with work and contact
+                sections that also stand out.
+              </p>
+            </div>
+
+            <a
+              href="https://www.noelarzola.com/jubilee-austen"
+              target="_blank"
+              rel="noopener"
+            >
+              <picture>
+                <source type="image/webp" srcset="img/jubilee.webp" />
+                <img
+                  class="portfolio-image"
+                  src="img/jubilee.png"
+                  alt="Snapshot of the Jubilee Austen website"
+                />
+              </picture>
+            </a>
+
+            <a
+              href="https://www.noelarzola.com/election-map"
+              target="_blank"
+              rel="noopener"
+            >
+              <picture>
+                <source type="image/webp" srcset="img/election-map.webp" />
+                <img
+                  class="portfolio-image"
+                  src="img/election-map.png"
+                  alt="Snapshot of the Interactive Election Map"
+                />
+              </picture>
+            </a>
+
+            <div class="portfolio-text-block">
+              <h3>Interactive U.S. Election Map</h3>
+              <h4>HTML, CSS, &amp; JavaScript</h4>
+              <p>
+                This is an interactive site fueled by JavaScript. At the top of
+                the page it reflects the total votes and declares a winner. As
+                you mouse over the states they will change from gray to the
+                party color of the winner or blue if there is a draw. The table
+                in the bottom corner will display the date, the candidates
+                names, their total votes, and the winner of the state all
+                following the same color scheme. I’ve always loved JavaScript
+                and it was cool working with my first JavaScript framework.
+              </p>
+            </div>
+
+            <div class="portfolio-text-block left-side-text">
+              <h3>Magic 8 Ball</h3>
+              <h4>HTML, CSS, &amp; JavaScript</h4>
+              <p>
+                The Magic 8 Ball you’ll find here puts my first 8 Ball to shame!
+                The code is where the real beauty is at, it is so much more
+                efficient, clean, and powerful. This interactive site displays
+                an 8 Ball with an interactive button below it. Once you hit the
+                button the ball will shake and you’ll be prompted to enter a
+                question (choose wisely!). After one more shake the answer is
+                revealed! If interested, please check out
+                <a
+                  href="https://www.khanacademy.org/computer-programming/spin-off-of-project-magic-8-ball/5424639632965632"
+                  target="_blank"
+                  rel="noopener"
+                  ><span>my first 8 Ball</span></a
+                >
+                and my
+                <a
+                  href="https://www.khanacademy.org/profile/kaid_1090753923038244403640020/projects"
+                  target="_blank"
+                  rel="noopener"
+                  ><span>old coding and programming projects</span></a
+                >.
+              </p>
+            </div>
+
+            <a
+              href="https://www.noelarzola.com/magic-8-ball"
+              target="_blank"
+              rel="noopener"
+            >
+              <picture>
+                <source srcset="img/magic-8-ball.webp" type="image/webp" />
+                <img
+                  class="portfolio-image"
+                  src="img/magic-8-ball.png"
+                  alt="Snapshot of the Magic 8 Ball site"
+                />
+              </picture>
+            </a>
+
+            <a
+              href="https://www.noelarzola.com/lolcat-clock"
+              target="_blank"
+              rel="noopener"
+            >
+              <picture>
+                <source srcset="img/lolcat-clock.webp" type="image/webp" />
+                <img
+                  class="portfolio-image"
+                  src="img/lolcat-clock.jpg"
+                  alt="Snapshot of the LOL Cat Clock"
+                />
+              </picture>
+            </a>
+
+            <div class="portfolio-text-block">
+              <h3>LOLCat Clock</h3>
+              <h4>HTML, CSS, &amp; JavaScript</h4>
+              <p>
+                An interactive clock full of entertaining cat pics. There are
+                four buttons that accept user input. Three are for setting a
+                custom wake-up, lunch, and nap times which will trigger images
+                related to each when the time matches. The fourth is a “PARTY
+                TIME!” button that can be activated at any time, check out what
+                happens when you tap it.
+              </p>
+            </div>
+
+            <div class="portfolio-text-block left-side-text">
+              <h3>Bruce Lee Manifesto</h3>
+              <h4>HTML & CSS Exercise</h4>
+              <p>
+                While working on the Holstee Manifesto project I kept dreaming
+                up this site in the back of my head. I don’t know if it’s
+                because Bruce Lee and Holstee sound similar, or if it was the
+                arrangement of inspirational quotes (probably both!). This was a
+                crash course on cross-browser compatibility and required a lot
+                of tweaking to get it just right on all major browsers. It was
+                fun and rewarding. RIP the greatest of all time!
+              </p>
+            </div>
+
+            <a
+              href="https://www.noelarzola.com/bruce-lee-manifesto"
+              target="_blank"
+              rel="noopener"
+            >
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="img/brucelee-manifesto.webp"
+                />
+                <img
+                  class="portfolio-image"
+                  src="img/brucelee-manifesto.jpg"
+                  alt="Snapshot of the Bruce Lee Manifesto website"
+                />
+              </picture>
+            </a>
+
+            <a
+              href="https://www.noelarzola.com/holstee-manifesto"
+              target="_blank"
+              rel="noopener"
+            >
+              <picture>
+                <source srcset="img/holstee.webp" type="image/webp" />
+                <img
+                  class="portfolio-image"
+                  src="img/holstee.jpg"
+                  alt="Snapshot of my Holstee Manifesto exercise"
+                />
+              </picture>
+            </a>
+
+            <div class="portfolio-text-block">
+              <h3>Holstee Manifesto Exercise</h3>
+              <h4>HTML & CSS Exercise</h4>
+              <p>
+                This was a fun project that involved Rubik’s cubing quotes from
+                the Holstee Manifesto, divs, and padding into a work of art. It
+                was the first project in my Skillcrush Break Into Tech course.
+                It was a great exercise to practice CSS, measurements, padding,
+                margin, and floats.
+              </p>
+            </div>
+          </div>
+          <!--End Portfolio section-->
+        </section>
+
+        <section>
+          <div class="about-section">
+            <h2 id="about">about me</h2>
+            <h3>I am passionate about the web.</h3>
+            <p>
+              I’m Noel Arzola, a Front-End Developer based in Ohio that works
+              with HTML, CSS, JavaScript, PHP, and WordPress. I take pride in
+              writing clean, efficient code and enjoy making great looking
+              websites.
+            </p>
+            <p>
+              When I’m not coding or learning and reading more about developing
+              I love spending time with my three kids, riding my motorcycle,
+              lifting weights, and learning foreign languages!
+            </p>
+            <p class="third-paragraph">Can't wait to work with you!</p>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div class="full-width">
+          <h2 id="contact">let's connect</h2>
+        </div>
+        <div class="third-width">
+          <h3>Hire me</h3>
+          <address>
+            <p>
+              740-315-8315<br />
+              <a
+                href="mailto:noel@noelarzola.com"
+                target="_blank"
+                rel="noopener"
+                ><span>noel@noelarzola.com</span></a
+              >
+            </p>
+          </address>
+        </div>
+        <div class="third-width">
+          <h3>Follow me</h3>
+          <a
+            href="https://www.twitter.com/arzolacodes"
+            target="_blank"
+            rel="noopener"
+          >
+            <span class="fa-stack">
+              <i class="fas fa-circle fa-stack-2x"></i>
+              <i class="fab fa-twitter fa-stack-1x"></i>
+            </span>
+          </a>
+
+          <a
+            href="https://noelarzola.github.io/"
+            target="_blank"
+            rel="noopener"
+          >
+            <span i class="fab fa-github"></span>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/noelarzola"
+            target="_blank"
+            rel="noopener"
+          >
+            <span class="fa-stack">
+              <i class="fas fa-circle fa-stack-2x"></i>
+              <i class="fab fa-linkedin-in fa-stack-1x"></i>
+            </span>
+          </a>
+        </div>
+        <div class="third-width">
+          <h3>Meet me</h3>
+          <p>Belpre, Ohio</p>
+          <p>Let's go to meetups together!</p>
+        </div>
+        <div id="copyright">
+          <p>Copyright 2020 | Arzola Solutions, LLC</p>
+        </div>
+      </footer>
+    </div>
+    <!--End Container-->
+  </body>
 </html>
