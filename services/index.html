@@ -35,13 +35,28 @@
 
   <body>
     <div class="container">
+      <!-- The overlay -->
+      <div id="myNav" class="overlay">
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+
+        <!-- Overlay content -->
+        <div class="overlay-content" onclick="closeNav()">
+          <a href="../index.html">home</a>
+          <a href="../index.html#portfolio-section">portfolio</a>
+          <a href="../index.html#about">about</a>
+          <a href="#contact">contact</a>
+        </div>
+      </div>
       <header>
         <div class="full-width">
           <div class="nav-box">
             <a id="home-link" href="../index.html">
               <h1>&lt;noel arzola | web developer /&gt;</h1>
             </a>
-            <a href="javascript:void(0);" class="icon" onclick="navButton()">
+            <a href="javascript:void(0);" class="icon" onclick="openNav()">
               <i class="fas fa-bars" id="hamburgesa"></i>
             </a>
           </div>
