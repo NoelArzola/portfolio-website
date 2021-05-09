@@ -1,0 +1,76 @@
+body {
+	background: cadetblue;
+}
+
+h1 {
+	font-family: monospace;
+	text-align: center;
+	font-size: 50px;
+}
+
+#main-div {
+	background: lightgray;
+	width: 480px;
+	font-family: 'Roboto', sans-serif;
+	overflow: auto;
+	margin: 0 auto;
+}
+
+#left {
+	float: left;
+	width: 230px;
+	padding: 0px;
+	margin: 10px 0px 10px 10px;
+}
+
+#right {
+	float: left;
+	width: 230px;
+	padding: 0px;
+	margin: 10px 10px 10px 0px;
+}
+
+.double {
+	margin: 0px 0px 0px 0px;
+	padding: 30px 10px 30px 10px;
+	text-align: center;
+	font-size: 24px;
+	height:360px;
+}	
+
+.single {
+	margin: 0px 0px 0px 0px;
+	padding: 30px 30px 30px 30px;
+	text-align: center;
+	font-size: 18px;
+	height:150px;
+}
+
+.short-quote {
+	padding: 50px 30px 10px 30px;
+	text-align: center;
+	font-size: 18px;
+	height:150px;
+	margin: 0px;
+}
+
+.color-one {
+	background: tomato;
+}
+
+.color-two {
+	background: #a862ea;
+}
+
+.color-three {
+	background: CornFlowerBlue;
+}
+
+.color-four {
+	background: SeaGreen;
+}
+
+.emphasis {
+	font-weight: 900;
+	font-family: 'Big Shoulders Text', cursive;
+}
