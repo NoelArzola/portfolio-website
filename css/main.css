@@ -1,220 +1,588 @@
-/****** Body *****/
+/****** Base Styles ******/
 
 body {
-    background: #1f202b;
-    color: #ffffff;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    margin: 0px auto;
+  background: #1f202b;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  margin: 0px auto;
 }
 
 h2 {
-    color: #fa0075;
-    font-family: 'Source Code Pro', monospace;
-    font-size: 36px;
-    margin: 0 auto;
-    text-align: center; 
+  /*color: #fa0075; Changing for accessibility if I can stand it*/
+  color: #fa00c3;
+  font-family: "Source Code Pro", monospace;
+  font-size: 2.25em;
+  margin: 0 auto;
+  padding: 1em 0;
+  text-align: center;
 }
 
 h3 {
-    font-weight: bold;
-    /*margin: 0 auto;*/
+  font-weight: bold;
 }
 
-/*h4 {
-    margin: 0 auto;
+address {
+  font-style: normal;
 }
-
-p {
-    margin: 0 auto;
-}*/
 
 span {
-    color: #fa0075;
+  /*color: #fa0075;*/
+  color: #fa00c3;
 }
 
-/***** Grid *****/
+a {
+  text-decoration: none;
+}
+
+/****** Grid Stuff ******/
 
 .container {
-    margin: 0 auto;
-    width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1305px;
 }
 
 .full-width {
-    width: 1400px;
+  width: 100%;
 }
 
 .half-width {
-    float: left;
-    width: 660px;
+  width: 50%;
 }
 
 .third-width {
-    float: left;
-    width: 466px;
+  margin: 0;
+  padding: 0;
 }
 
-/***** Header *****/
+/****** Header ******/
 
 header h1 {
-    float: left;
-    font-size: 30px;
-    font-weight: 400;
+  display: flex;
+  font-size: 1.25em;
+  font-weight: 400;
+  justify-content: center;
+}
+
+#home-link {
+  color: white;
+  text-decoration: none;
+}
+
+.header-divider {
+  background: #fa00c3;
+  height: 1px;
+}
+
+.nav-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icon {
+  color: white;
+}
+
+#nav {
+  display: none;
+}
+
+nav a:hover {
+  color: #fa00c3;
 }
 
 header nav {
-    float: right;
+  display: flex;
+  font-size: 1.25em;
+  justify-content: center;
+  text-align: center;
+}
+
+nav ul {
+  padding: 0;
 }
 
 nav ul li {
-    display: inline-block; 
+  list-style-type: none;
+  padding: 1.5em 0;
 }
 
 nav ul li a {
-    color: #ffffff;
-    padding: 10px 22.5px 10px 22.5px;
-    text-decoration: none;
+  color: #ffffff;
+  text-decoration: none;
 }
 
-/***** Main *****/
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 0;
+  width: 100%;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(31, 32, 43); /* Black fallback color */
+  background-color: rgba(31, 32, 43, 0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #fa00c3;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+/****** Hero Area ******/
 
 #main-section {
-    background: url('../img/hero-background.png') no-repeat;
-    clear: both;
+  align-content: center;
+  background: url(../img/hero-background.png) center no-repeat #333;
+  background-size: cover;
+  display: flex;
+  flex-flow: column wrap;
+  height: 100%;
+  justify-content: center;
+  min-height: 500px;
+  width: 100%;
 }
 
 #main-section p {
-    font-family: 'Source Code Pro', monospace;
-    font-size: 72px;
-    font-weight: 600;
-    margin-bottom: 55px;
-    margin-top: 0px;
-    padding: 270px 0 270px 95px; 
+  font-family: "Source Code Pro", monospace;
+  font-size: 2.25em;
+  font-weight: 600;
+  margin-bottom: 55px;
+  margin-top: 0;
+  padding: 0 1em 0 0;
 }
 
-#main-image img {
-    width: 1400px;
+#service-button {
+  background-color: #fa00c3;
+  border: 3px solid #1f202b;
+  width: 10em;
+  margin-left: 5em;
+  text-decoration: none;
+  color: white;
+  padding: 1em 1em;
+  text-align: center;
 }
 
-/***** Portfolio *****/
+/****** Portfolio ******/
 
-.portfolio h2 {
-    padding-bottom: 110px;
+.portfolio {
+  align-items: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+.portfolio a:visited {
+  /*color: #fa0075;*/
+  color: #fa00c3;
+}
+
+#portfolio-section h2 {
+  padding: 1em 0;
 }
 
 .portfolio h3,
 .portfolio h4 {
-    margin: 0px;
+  margin: 0;
+}
+
+.portfolio div,
+.portfolio h3,
+.portfolio h4,
+.portfolio p {
+  display: none;
 }
 
 .portfolio-image {
-    height: 350px;
-    padding-bottom: 110px;
-    padding-top: 10px;
-    width: 550px;
+  padding: 1em 0 2em 0;
+  width: 100%;
 }
 
 .portfolio h3 {
-    padding-bottom: 5px;
+  padding-bottom: 0.3125em;
 }
 
 .portfolio h4 {
-    font-weight: normal;
+  font-weight: normal;
 }
 
-#portfolio-left {
-    margin: 0 auto;
-    text-align: right;
-    padding-right: 35px;
-}
-
-#portfolio-right {
-    margin: 0 auto;
-    padding-left: 35px;
-    text-align: left;
-}
-
-.portfolio p {
-    width: 550px;
-}
-
-#top-paragraph {
-    padding-bottom: 150px;
-}
-
-#middle-paragraph {
-    margin-right: 0px;
-    padding-bottom: 150px;
-    padding-left: 110px;
-    padding-right: 0px;
-}
-
-#portfolio-right a {
-    display: inline;
-    text-decoration: none;
-    vertical-align: bottom;
-}
-
-/***** About *****/
-
-.about-section {
-    background: url('../img/about-me.png') no-repeat;
-    clear: both;
-    color: black;
-    padding: 10px 0 450px 0;
-    width: 1400px;
-}
-
-.about-section img {
-    width: 1200px;
-}
-
-.about-section .half-width {
-    padding-left: 100px;
-    text-align: left;
-}
+/****** About ******/
 
 #about {
-    padding-top: 40px;
+  padding-top: 1.11em;
 }
 
-/***** Footer *****/
+.about-section {
+  background: url(../img/about-me.png) center no-repeat #333;
+  background-size: cover;
+  color: black;
+  height: 100%;
+  min-height: 515px;
+  width: 100%;
+}
+
+.about-section h3,
+.about-section p {
+  padding: 0 1em;
+}
+
+.about-section .third-paragraph {
+  padding-bottom: 8em;
+}
+
+/****** Footer ******/
 
 footer {
-    clear: both;
+  align-content: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
 }
 
 footer .third-width {
-    float: left;
-    text-align: center;
+  text-align: center;
 }
 
 footer h2 {
-    padding: 50px 20px 60px 20px;
+  padding: 1em 0 1em 0;
 }
 
 footer h3 {
-    padding: 30px;
+  padding: 1.875em;
 }
 
 footer a {
-    color: #ffffff;
-    text-decoration: none;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 footer p {
-    line-height: 35px;
-    margin: 0 auto;
+  line-height: 35px;
+  margin: 0 auto;
 }
 
-footer img {
-    padding: 20px;
+/*footer img {
+    padding: 1.25em;
+    width: 10%;
+}*/
+
+.fa-stack {
+  padding: 0 0.5em;
+}
+
+.fa-linkedin-in,
+.fa-twitter {
+  color: #1f202b;
+  font-size: 1em;
+}
+
+.fa-github {
+  font-size: 2em;
+  vertical-align: bottom;
 }
 
 #copyright {
-    clear: both;
-    font-size: 18px;
-    padding: 50px 0 10px 0;
-    text-align: center;
+  font-size: 1.125em;
+  padding: 3.125em 0 0.625em 0;
+  text-align: center;
+}
+
+/****************Services Page****************/
+.services {
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+}
+
+.service-1,
+.service-2,
+.service-3,
+.service-4,
+.service-5 {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 2em;
+}
+
+.services h3 {
+  margin: 0.5em 0 0 0;
+}
+
+.services i {
+  color: #fa00c3;
+  font-size: 2em;
+}
+
+/****** Tablet Styles ******/
+
+@media only screen and (min-width: 768px) {
+  /****** Base ******/
+  .third-width {
+    width: 33.33%;
+  }
+
+  /****** Nav ******/
+  .nav-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+  }
+
+  /*****Hero Area *****/
+  #main-section p {
+    margin: auto;
+    padding-top: 3em;
+    padding-right: 6em;
+  }
+
+  #service-button {
+    margin: auto;
+  }
+
+  /****** Portfolio ******/
+  .portfolio {
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .portfolio div,
+  .portfolio a {
+    flex: 0 0 40%;
+    padding: 2em 1em;
+  }
+
+  .portfolio .portfolio-image {
+    /*TABLET ONLY!*/
+    height: 12.8em;
+  }
+
+  /****** About ******/
+
+  .about-section h3,
+  .about-section p {
+    padding-left: 2em;
+    width: 70%;
+  }
+
+  /****** Footer ******/
+  footer {
+    flex-flow: row wrap;
+  }
+
+  /****************Services Page****************/
+  .services {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
+  .service-1,
+  .service-2,
+  .service-3,
+  .service-4,
+  .service-5 {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 40%;
+    height: 100%;
+  }
+
+  .service-5 p {
+    width: 70%;
+  }
+}
+
+/****** Desktop Styles ******/
+@media only screen and (min-width: 1200px) {
+  /****** Base Styles ******/
+
+  body {
+    font-size: 1.5em;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .half-width {
+    width: 47%;
+  }
+
+  .third-width {
+    width: 33%;
+  }
+
+  h2 {
+    font-size: 1.5em;
+    padding: 1.6666666em 0;
+  }
+
+  /****** Header ******/
+
+  header .full-width {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  header h1 {
+    display: block;
+    font-size: 1.25em;
+    padding-left: 0.33em;
+  }
+
+  .header-divider {
+    display: none;
+  }
+
+  #nav {
+    display: block;
+  }
+
+  .icon {
+    display: none;
+  }
+
+  header nav {
+    display: block;
+    font-size: 1em;
+    padding-right: 0.416666666em;
+  }
+
+  nav ul li {
+    display: inline-block;
+    padding: 0 1em;
+  }
+
+  /****** Hero Area ******/
+
+  #main-section {
+    justify-content: flex-start;
+    margin: 0 auto;
+    min-height: 727px;
+    width: 100%;
+  }
+
+  #main-section p {
+    font-size: 3em;
+    padding-bottom: 2.5em;
+    margin-right: 2em;
+  }
+
+  #service-button {
+    display: none;
+  }
+
+  /****** Portfolio ******/
+
+  .portfolio {
+    align-items: stretch;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
+  .portfolio div,
+  .portfolio h3,
+  .portfolio h4,
+  .portfolio p {
+    display: block;
+  }
+
+  .portfolio div,
+  .portfolio a {
+    flex: 1 0 32%;
+    padding: 2em 1em;
+    justify-content: center;
+  }
+
+  .portfolio .portfolio-image {
+    height: unset;
+    padding: 0;
+  }
+
+  .left-side-text {
+    text-align: right;
+  }
+
+  .portfolio .portfolio-text-block a {
+    padding: 0;
+  }
+
+  /****** About ******/
+
+  .about-section {
+    margin: 0 auto;
+    min-height: 700px;
+    width: 100%;
+  }
+
+  #about {
+    padding-top: 1.6666666em;
+  }
+
+  .about-section h3 {
+    margin-top: 0;
+    padding: 0 0 0 3.562em;
+    width: 50%;
+  }
+
+  .about-section p {
+    padding: 0 0 0 4.17em;
+    width: 43.5%;
+  }
+
+  .about-section .third-paragraph {
+    padding-bottom: 4.16666666em;
+  }
+
+  /****** Footer ******/
+
+  footer h2 {
+    padding: 1.6666666em 0 1.090833333em 0;
+  }
+
+  #copyright {
+    font-size: 0.75em;
+  }
 }
