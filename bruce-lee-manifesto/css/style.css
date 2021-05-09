@@ -1,0 +1,125 @@
+@font-face {
+	font-family: 'Apple Chancery';
+	font-style: normal;
+	font-weight: normal;
+	src: url('../fonts/apple-chancery.woff') format('woff');
+}
+
+/***** BODY *****/
+
+body {
+	background: #fdab00;
+	color: #020202;
+}
+
+.color-one {
+	background: #fdab00;
+}
+
+.color-two {
+	background: #020202;
+	color: #fdab00;
+}
+
+.emphasis {
+	font-family: 'Apple Chancery';
+	font-size: 23px;
+	font-weight: 900;
+	margin: 0;
+}
+
+h1 {
+	font-family: monospace;
+	font-size: 50px;
+	text-align: center;
+}
+
+p {
+	font-size: 20px;
+	margin: 0;
+}
+
+/***** GRID *****/
+
+.container {
+	background: black;
+	font-family: 'Calistoga', cursive;
+	margin: 0 auto;
+	overflow: auto;
+	padding: 0;
+	width: 520px;
+}
+
+#left {
+	float: left;
+	margin: 10px 0px 10px 10px;
+	padding: 0px;
+	width: 250px;
+}
+
+#right {
+	float: left;
+	margin: 10px 10px 10px 0px;
+	padding: 0px;
+	width: 250px;
+}
+
+.double-block {
+	font-size: 20px;
+	height: 500px;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	width: 250px;
+}	
+
+.single-block {
+	font-size: 18px;
+	height: 250px;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	widows: 250px;
+}
+
+/***** CONTENT *****/
+
+img {
+	height: 250px;
+	margin: 0 auto;
+	padding: 0px;
+	vertical-align: bottom;
+	width: 250px;
+}
+
+#top-first-quote {
+	padding: 10px 5px 0px 5px;
+}
+
+#bottom-first-quote {
+	padding: 20px 10px 20px 0px
+}
+
+#second-quote {
+	padding: 80px 20px 20px 20px;
+}
+
+#third-quote {
+	padding: 80px 20px 20px 20px;
+}
+
+#fourth-quote {
+	padding: 80px 20px 20px 20px;
+}
+
+#fifth-quote {
+	padding: 80px 20px 20px 20px;
+}
+
+#top-sixth-quote {
+	padding: 15px 5px 0px 5px;
+}
+
+#bottom-sixth-quote {
+	padding: 40px 10px 5px 10px;
+}
