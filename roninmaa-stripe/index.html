@@ -1,0 +1,92 @@
+<!doctype html>
+<html class="no-js" lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <title>Checkout: Ronin MAA</title>
+  <meta name="description" content="Checkout Stripe Billing">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+
+  <!-- Load Stripe.js on your website. -->
+  <script src="https://js.stripe.com/v3"></script>
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+  <div class="content-wrapper">
+  <h1>Sign Up For Our Online Classes!</h1>
+  <img src="img/hero-image.jpeg" alt="Ronin MAA Company Logo - Wolf with the academy name under it">
+  <h1 class="order-amount">$20.00</h1>
+  <p id="waiver">Upon successful completion of sale a waiver will be provided on the immediate page following. <br>Please complete and return before your first class.</p>
+  <button
+    id="checkout-button-plan_GzkpY6NUaZSnN7"
+    role="link">
+    Adults
+  </button>
+  <button
+    id="checkout-button-plan_HC4fzicXY21nrx"
+    role="link">
+    Kids
+  </button>
+  <h5><em>All memberships require a 1 month minimum notice for cancellation</em></h2>
+
+<div id="error-message"></div>
+</div>
+
+<script>
+    (function() {
+      var stripe = Stripe('pk_live_aQXR61QiFmLtiE09Y9OUYeHI00SKHm6oiF');
+    
+      var checkoutButton1 = document.getElementById('checkout-button-plan_GzkpY6NUaZSnN7');
+      checkoutButton1.addEventListener('click', function () {
+        // When the customer clicks on the button, redirect
+        // them to Checkout.
+        stripe.redirectToCheckout({
+          items: [{plan: 'plan_GzkpY6NUaZSnN7', quantity: 1}],
+          successUrl: 'https://www.roninmaa.com/success',
+          cancelUrl: 'https://www.roninmaa.com/canceled',
+        })
+        .then(function (result) {
+          if (result.error) {
+            // If `redirectToCheckout` fails due to a browser or network
+            // error, display the localized error message to your customer.
+            var displayError = document.getElementById('error-message');
+            displayError.textContent = result.error.message;
+          }
+        });
+      });
+    })();
+
+    (function() {
+      var stripe = Stripe('pk_live_aQXR61QiFmLtiE09Y9OUYeHI00SKHm6oiF');
+    
+      var checkoutButton2 = document.getElementById('checkout-button-plan_HC4fzicXY21nrx');
+      checkoutButton2.addEventListener('click', function () {
+        // When the customer clicks on the button, redirect
+        // them to Checkout.
+        stripe.redirectToCheckout({
+          items: [{plan: 'plan_HC4fzicXY21nrx', quantity: 1}],
+          successUrl: 'https://www.roninmaa.com/success',
+          cancelUrl: 'https://www.roninmaa.com/canceled',
+        })
+        .then(function (result) {
+          if (result.error) {
+            // If `redirectToCheckout` fails due to a browser or network
+            // error, display the localized error message to your customer.
+            var displayError = document.getElementById('error-message');
+            displayError.textContent = result.error.message;
+          }
+        });
+      });
+    })();
+  </script>
+</body>
+
+</html>
