@@ -175,6 +175,8 @@ nav ul li a {
   justify-content: center;
   min-height: 500px;
   width: 100%;
+  justify-items: center;
+  align-items: center;
 }
 
 #hero-section p {
@@ -182,15 +184,14 @@ nav ul li a {
   font-size: 2.25em;
   font-weight: 600;
   margin-bottom: 55px;
-  margin-top: 0;
-  padding: 0 1em 0 1em;
+  padding: 0 1em;
 }
 
 #service-button {
   background-color: #4285f4;
   border: none;
-  width: 10em;
-  margin-left: 5em;
+  width: 37%;
+  margin: 0 35%;
   text-decoration: none;
   color: white;
   padding: 1em 1em;
@@ -505,7 +506,36 @@ footer p {
 
   /****** Footer ******/
   footer {
-    flex-flow: row wrap;
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "contact social  meetMe"
+      "copyright copyright copyright";
+    gap: 0 5em;
+  }
+
+  footer h2 {
+    grid-area: header;
+  }
+
+  footer .third-width {
+    width: 100%;
+  }
+
+  footer .contact--grid {
+    grid-area: contact;
+  }
+
+  footer .social--grid {
+    grid-area: social;
+  }
+
+  footer .meetMe--grid {
+    grid-area: meetMe;
+  }
+
+  #copyright {
+    grid-area: copyright;
   }
 
   /****************Services Page****************/
@@ -616,7 +646,7 @@ footer p {
   }
 
   #service-button {
-    margin-bottom: 2em;
+    margin-bottom: 5em;
   }
 
   /****** Skills ******/
