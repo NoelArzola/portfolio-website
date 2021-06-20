@@ -196,6 +196,39 @@ nav ul li a {
   text-align: center;
 }
 
+/****** Skills ******/
+
+#skills {
+  background-color: #4285f4;
+}
+
+#skills h2 {
+  color: white;
+}
+#skills-section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3em;
+}
+.skill-item {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25%;
+  background: white;
+  width: 33%;
+  padding-top: 1.5em;
+  margin: 1em 1em;
+  color: #3842ad;
+}
+
+.skill-item .fab,
+.skill-item .fas {
+  font-size: 3em;
+}
 /****** Portfolio ******/
 
 .portfolio {
@@ -403,6 +436,11 @@ footer p {
     margin: auto;
   }
 
+  /****** Skills ******/
+  .skill-item {
+    width: 19%;
+  }
+
   /****** Portfolio ******/
   .portfolio {
     flex-flow: row wrap;
@@ -560,6 +598,20 @@ footer p {
 
   #service-button {
     display: none;
+  }
+
+  /****** Skills ******/
+  .skill-item {
+    width: 11%;
+  }
+
+  .skill-item .fab,
+  .skill-item .fas {
+    font-size: 1.75em;
+  }
+
+  .skill-item h3 {
+    font-size: 0.75em;
   }
 
   /****** Portfolio ******/
