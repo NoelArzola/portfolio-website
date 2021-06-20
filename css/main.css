@@ -1,8 +1,8 @@
 /****** Base Styles ******/
 
 body {
-  background: #1f202b;
-  color: #ffffff;
+  background: white;
+  color: #1f202b;
   font-family: "Montserrat", sans-serif;
   font-size: 1em;
   font-weight: 400;
@@ -10,7 +10,6 @@ body {
 }
 
 h2 {
-  /*color: #fa0075; Changing for accessibility if I can stand it*/
   color: #fa00c3;
   font-family: "Source Code Pro", monospace;
   font-size: 2.25em;
@@ -67,7 +66,7 @@ header h1 {
 }
 
 #home-link {
-  color: white;
+  color: #1f202b;
   text-decoration: none;
 }
 
@@ -111,7 +110,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #ffffff;
+  color: #1f202b;
   text-decoration: none;
 }
 
@@ -167,8 +166,8 @@ nav ul li a {
 
 #main-section {
   align-content: center;
-  background: url(../img/hero-background.png) center no-repeat #333;
-  background-size: cover;
+  /* background: url(../img/hero-background.png) center no-repeat #333;
+  background-size: cover; */
   display: flex;
   flex-flow: column wrap;
   height: 100%;
@@ -247,12 +246,18 @@ nav ul li a {
 }
 
 .about-section {
-  background: url(../img/about-me.png) center no-repeat #333;
-  background-size: cover;
+  /* background: url(../img/about-me.png) center no-repeat #333;
+  background-size: cover; */
+  background-color: lightgray;
   color: black;
   height: 100%;
   min-height: 515px;
   width: 100%;
+}
+
+.about-flex {
+  display: flex;
+  flex-flow: column;
 }
 
 .about-section h3,
@@ -261,7 +266,28 @@ nav ul li a {
 }
 
 .about-section .third-paragraph {
-  padding-bottom: 8em;
+  padding-bottom: 2em;
+}
+
+.about-photo {
+  padding-bottom: 3em;
+  order: 1;
+}
+
+.about-photo picture {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+.about-photo img {
+  border-radius: 50%;
+  width: 50%;
+}
+
+.about-text {
+  order: 2;
 }
 
 /****** Footer ******/
