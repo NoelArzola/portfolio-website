@@ -40,11 +40,12 @@ a {
 .container {
   margin: 0 auto;
   width: 100%;
-  max-width: 1305px;
 }
 
 .full-width {
   width: 100%;
+  max-width: 1305px;
+  margin: 0 auto;
 }
 
 .half-width {
@@ -187,16 +188,23 @@ nav ul li a {
 
 #service-button {
   background-color: #4285f4;
-  border: 3px solid #3842ad;
+  border: none;
   width: 10em;
   margin-left: 5em;
   text-decoration: none;
   color: white;
   padding: 1em 1em;
   text-align: center;
+  border-radius: 2px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
 /****** Skills ******/
+
+#skills--background {
+  background-color: #4285f4;
+}
 
 #skills {
   background-color: #4285f4;
@@ -427,9 +435,15 @@ footer p {
 
   /*****Hero Area *****/
   #hero-section p {
-    margin: auto;
     padding-top: 3em;
     padding-right: 6em;
+  }
+
+  p#hero-cta-text {
+    padding-left: 1em;
+    margin: 0;
+    text-align: center;
+    padding: 1.2em 0 0 0;
   }
 
   #service-button {
@@ -592,12 +606,17 @@ footer p {
 
   #hero-section p {
     font-size: 3em;
-    padding-bottom: 2.5em;
+    padding-bottom: 1em;
     margin-right: 2em;
+    padding-right: 0em;
+  }
+
+  p#hero-cta-text {
+    padding: 0 0 0.5em 2em;
   }
 
   #service-button {
-    display: none;
+    margin-bottom: 2em;
   }
 
   /****** Skills ******/
