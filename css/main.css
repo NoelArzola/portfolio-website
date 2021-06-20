@@ -712,11 +712,38 @@ footer p {
 
   /****** Footer ******/
 
+  footer {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "contact social  meetMe"
+      "copyright copyright copyright";
+    gap: 0 5em;
+  }
+
   footer h2 {
     padding: 1.6666666em 0 1.090833333em 0;
+    grid-area: header;
+  }
+
+  footer .third-width {
+    width: 100%;
+  }
+
+  footer .contact--grid {
+    grid-area: contact;
+  }
+
+  footer .social--grid {
+    grid-area: social;
+  }
+
+  footer .meetMe--grid {
+    grid-area: meetMe;
   }
 
   #copyright {
     font-size: 0.75em;
+    grid-area: copyright;
   }
 }
