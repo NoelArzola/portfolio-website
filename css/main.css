@@ -418,6 +418,10 @@ footer p {
   font-size: 2em;
 }
 
+.services--container footer {
+  border-top: 1px solid #4285f4;
+}
+
 /****** Tablet Styles ******/
 
 @media only screen and (min-width: 768px) {
@@ -775,5 +779,11 @@ footer p {
   #copyright {
     font-size: 0.75em;
     grid-area: copyright;
+  }
+
+  /**** Services Page ****/
+  .services--container {
+    max-width: 1200px;
+    margin: 0 auto;
   }
 }
